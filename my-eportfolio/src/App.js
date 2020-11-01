@@ -1,11 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import { Route } from 'react-router-dom';
+
+// import logo from './logo.svg';
 import './App.css';
+import './themes/variables.css';
+import './Css/style';
+
+// import pages
+import HomePage from './Pages/Home/home.page';
+import ProfilePage from './Pages/Profile/profile.page';
+
+// import Component
+import NavMenu from './Components/NavMenu/Navmenu.component';
+import ProjectPage from './Pages/Project/project.page';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
+      <NavMenu />
+      <Route path='/' component={HomePage} exact />
+      <Route path='/profile' component={ProfilePage} exact />
+      <Route path='/aboutme' component={ProfilePage} exact />
+      <Route path='/project' component={ProjectPage} exact />
+      <Route path='/project/:_id' component={ProjectPage} exact />
+
+      {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -18,7 +37,7 @@ function App() {
         >
           Learn React
         </a>
-      </header>
+      </header> */}
     </div>
   );
 }
