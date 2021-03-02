@@ -4,12 +4,15 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { AnimatePresence } from 'framer-motion';
 
 const app = (
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
+    <AnimatePresence exitBeforeEnter>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </AnimatePresence>
   </React.StrictMode>
 );
 
