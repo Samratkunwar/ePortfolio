@@ -5,6 +5,8 @@ import { motion } from 'framer-motion';
 import { animationOne, transition } from '../../animations/animations';
 import Image from '../../Data/Images/photo1.jpg';
 import DropMenu from '../../Components/DropdownMenu/DropdownMenu';
+import ImagetextContent from '../../Components/ImageTextContent/ImagetextContent';
+import { InfoData } from '../../Data/InfoData/InfoData';
 
 const Landingpage = () => {
 
@@ -19,6 +21,7 @@ const Landingpage = () => {
                 <Navmenu toggle={toggle} />
                 <DropMenu isOpen={isOpen} toggle={toggle} />
                 <Hero image={Image} />
+                <ImagetextContent {...InfoData} />
             </div>
         </motion.div>
     )
