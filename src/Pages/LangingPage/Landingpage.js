@@ -6,7 +6,9 @@ import { animationOne, transition } from '../../animations/animations';
 import Image from '../../Data/Images/photo1.jpg';
 import DropMenu from '../../Components/DropdownMenu/DropdownMenu';
 import ImagetextContent from '../../Components/ImageTextContent/ImagetextContent';
-import { InfoData } from '../../Data/InfoData/InfoData';
+import { InfoData, InfoData2, textData } from '../../Data/InfoData/InfoData';
+import TextContent from '../../Components/TextContent/TextContent';
+import FooterMenu from '../../Components/FooterMenu/footer.component';
 
 const Landingpage = () => {
 
@@ -22,6 +24,10 @@ const Landingpage = () => {
                 <DropMenu isOpen={isOpen} toggle={toggle} />
                 <Hero image={Image} />
                 <ImagetextContent {...InfoData} />
+                <TextContent {...textData} />
+                <ImagetextContent {...InfoData2} />
+                <TextContent text="Need to develop a pre-loading (splash) Screen" />
+                <FooterMenu />
             </div>
         </motion.div>
     )

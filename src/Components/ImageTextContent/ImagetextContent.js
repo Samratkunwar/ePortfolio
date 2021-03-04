@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import Button from '../Button/Button';
 
 const Section = styled.section`
     width: 100%;
@@ -30,6 +31,7 @@ const ColumnLeft = styled.div`
     h1 {
         margin-bottom: 1rem;
         font-size: clamp(1.5rem, 6vw, 2rem);
+        font-family: 'Shippori Mincho B1', serif;
     }
 
     p {
@@ -68,7 +70,7 @@ const ImagetextContent = ({heading, paragraphOne, paragraphTwo, reverse, image})
                     <h1>{heading}</h1>
                     <p>{paragraphOne}</p>
                     <p>{paragraphTwo}</p>
-                    {/* <Button to='/'>{buttonLabel}</Button> */}
+                    <Button link="/about" label="View More" />
                 </ColumnLeft>
                 <ColumnRight reverse={reverse}>
                     <img src={image} alt={heading} />

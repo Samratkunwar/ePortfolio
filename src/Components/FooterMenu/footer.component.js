@@ -1,29 +1,224 @@
-import React, { Component } from 'react';
+import React from 'react'
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import {FaFacebook, FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import { MdEmail } from 'react-icons/md';
 
-class FooterMenu extends Component {
-    render() {
-        return (
-            <div className="footer">
-                <div className="footer__logo-box">
-                    <img src={"./img/logo1.png"} alt="full logo" className="footer__logo" />
-                </div>
+const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
 
-                <div className="row">
-                    <div className="footer__copyright-item">
-                        <p className="footer__copyright">
-                            <p> Copyright &copy; by Samrat Kunwar</p>
+const FooterContainer = styled.footer`
+    background-color: #101522;
+`;
 
-                            <p>Built by <a href="#" className="footer__link">Samrat Kunwar</a> as a form of his <a href="#" className="footer__link">ePortfolio</a>. 
-                            Designed and Developed through the means of MERN Stack. 
-                            Please feel free to leave a feedback towards the design and a possible 
-                            suggestions for imporvement in the future updates. Thank you! </p>   
-                        
-                        </p>
-                    </div>
-                </div>
-            </div>
-        )
+const FooterWrapper = styled.div`
+    padding 48px 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+`;
+
+const FooterLinksContainer = styled.div`
+    display: flex;
+    justify-content: center;
+
+    @media screen and (max-width: 820px) {
+        padding-top: 32px;
     }
+`;
+
+const FooterLinksWrapper = styled.div`
+    display: flex;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    }
+`;
+
+const FooterLinkItems = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 16px;
+    text-align: left;
+    width: 160px;
+    box-sizing: border-box;
+    color: #fff;
+
+    @media screen and (max-width: 420px) {
+        margin: 0;
+        padding: 10px;
+        width: 100%
+    }
+`;
+
+const FooterLinkTitle = styled.h1`
+    font-size: 18px;
+    margin-bottom: 16px;
+`;
+
+const FooterLink = styled(Link)`
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+    opacity: .7;
+
+    &:hover {
+        color: #01bf71;
+        transition: 0.3s ease-out;
+        text-decoration: none;
+        opacity: 1;
+    }
+`;
+
+const SocialMedia = styled.section`
+    max-width: 1000px;
+    width: 100%;
+`;
+
+const SocialMediaWrap = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: 40px auto 0 auto;
+
+    @media screen and (max-width: 820px) {
+        flex-direction: column;
+    } 
+`;
+
+const SocialLogo = styled(Link)`
+    color: #fff;
+    justify-self: start;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    margin-buttom: 16px;
+    font-weight: bold;
+
+    &:hover {
+        color: #01bf71;
+        text-decoration: none;
+    }
+`;
+
+export const WebsiteRights = styled.small`
+    color: #fff;
+    margin-buttom: 16px;
+`;
+
+const SocialIcons = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 240px;
+`;
+
+const SocialIconLink = styled.a`
+    color: #fff;
+    font-size: 24px;
+
+    &:hover {
+        color: #01bf71;
+    }
+`;
+
+
+const FooterMenu = () => {
+    return (
+        <FooterContainer>
+            <FooterWrapper>
+                <FooterLinksContainer>
+                    <FooterLinksWrapper>
+                        <FooterLinkItems>
+                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            <FooterLink to='/'>Home</FooterLink>
+                            <FooterLink to='/'>About</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink>
+                        </FooterLinkItems>
+                        <FooterLinkItems>
+                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            <FooterLink to='/'>Home</FooterLink>
+                            <FooterLink to='/'>About</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink>
+                        </FooterLinkItems>
+                    </FooterLinksWrapper>
+                    <FooterLinksWrapper>
+                        <FooterLinkItems>
+                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            <FooterLink to='/'>Home</FooterLink>
+                            <FooterLink to='/'>About</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink>
+                        </FooterLinkItems>
+                        <FooterLinkItems>
+                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            <FooterLink to='/'>Home</FooterLink>
+                            <FooterLink to='/'>About</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink>
+                        </FooterLinkItems>
+                    </FooterLinksWrapper>
+                </FooterLinksContainer>
+                <SocialMedia>
+                    <SocialMediaWrap>
+                        <SocialLogo to='/'>
+                            {/* <img src={"./img/logo1.png"} alt="full logo" /> */}
+                            Samrat
+                        </SocialLogo>
+                        <WebsiteRights>
+                            Samrat © {new Date().getFullYear()} All rights Reserved.
+                        </WebsiteRights>
+                        <SocialIcons>
+                            <SocialIconLink href="/" target="_blank" arial-label="Facebook"><FaFacebook /></SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="GitHub"><FaGithub /></SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="Email"><MdEmail /></SocialIconLink>
+                            <SocialIconLink href="/" target="_blank" arial-label="LlinkedIn"><FaLinkedinIn /></SocialIconLink>
+                        </SocialIcons>
+                    </SocialMediaWrap>
+                </SocialMedia>
+            </FooterWrapper>
+        </FooterContainer>
+    )
 }
 
 export default FooterMenu;
+
+
+
+
+
+
+// import React, { Component } from 'react';
+
+// class FooterMenu extends Component {
+//     render() {
+//         return (
+//             <div className="footer">
+//                 <div className="footer__logo-box">
+//                     <img src={"./img/logo1.png"} alt="full logo" className="footer__logo" />
+//                 </div>
+
+//                 <div className="row">
+//                     <div className="footer__copyright-item">
+//                         <p className="footer__copyright">
+//                             <p> Copyright &copy; by Samrat Kunwar</p>
+
+//                             <p>Built by <a href="#" className="footer__link">Samrat Kunwar</a> as a form of his <a href="#" className="footer__link">ePortfolio</a>. 
+//                             Designed and Developed through the means of MERN Stack. 
+//                             Please feel free to leave a feedback towards the design and a possible 
+//                             suggestions for imporvement in the future updates. Thank you! </p>   
+                        
+//                         </p>
+//                     </div>
+//                 </div>
+//             </div>
+//         )
+//     }
+// }
+
+// export default FooterMenu;
