@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import '../Home/home.page.css';
-import FooterMenu from '../../Components/FooterMenu/footer.component';
+import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
 
 class HomePage extends Component {
     render () {

@@ -1,12 +1,12 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
-import { navLinks } from '../../Data/NavLinks/navLinks';
-import Hammenu from '../../Data/Images/list.svg'
+import { navLinks } from '../../../Data/NavLinks/navLinks';
+import Hammenu from '../../../Data/Images/list.svg'
 
 const Navbar = styled.nav`
     height: 60px;
-    background: transparent;
+    background: #101522;
     padding: 0rem calc((100vw - 1300px) / 2);
     display: flex;
     justify-content: space-between;
@@ -22,7 +22,7 @@ const MenuBars = styled.i`
         height: 40px;
         width: 40px;
         cursor: pointer;
-        position: absolute:
+        position: absolute;
         top: 0;
         right: 0;
         transform: translate(-50%, 25%);

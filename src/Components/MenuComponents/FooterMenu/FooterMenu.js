@@ -4,14 +4,14 @@ import { Link } from 'react-router-dom';
 import {FaFacebook, FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
-const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
+// const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
 
 const FooterContainer = styled.footer`
     background-color: #101522;
 `;
 
 const FooterWrapper = styled.div`
-    padding 48px 24px;
+    padding: 48px 24px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -99,7 +99,7 @@ const SocialLogo = styled(Link)`
     font-size: 1.5rem;
     display: flex;
     align-items: center;
-    margin-buttom: 16px;
+    margin-bottom: 16px;
     font-weight: bold;
 
     &:hover {
@@ -110,7 +110,7 @@ const SocialLogo = styled(Link)`
 
 export const WebsiteRights = styled.small`
     color: #fff;
-    margin-buttom: 16px;
+    margin-bottom: 16px;
 `;
 
 const SocialIcons = styled.div`

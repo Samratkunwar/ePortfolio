@@ -1,26 +1,27 @@
 import React from 'react'
 import styled from 'styled-components';
+import {FontStyle} from '../../../Css/globalStyle';
 
 const Section = styled.section`
     width: 100%;
     height: 100%;
     padding: 6rem 0rem;
-    background-color: #000;
+    background-color: #101522;
 
 `;
     
 const Container = styled.div`
     padding: 0rem 4rem;
     font-size: 25px; 
-    font-family: 'Shippori Mincho B1', serif;
+    ${FontStyle};
 
     p {
-            color: #fff; 
-        }
+        color: #fff; 
+    }
 `;
 
 
-const TextContent = ({text}) => {
+const TextSection = ({text}) => {
     return (
         <Section>
             <Container>
@@ -30,4 +31,4 @@ const TextContent = ({text}) => {
     )
 }
 
-export default TextContent
+export default TextSection

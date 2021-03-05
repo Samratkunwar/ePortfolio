@@ -1,14 +1,22 @@
 import React, {useState} from 'react'
-import Hero from '../../Components/Hero/Hero'
-import Navmenu from '../../Components/NavMenu/Navmenu.component'
 import { motion } from 'framer-motion';
+
+// Header and Footer Menu
+import Navmenu from '../../Components/MenuComponents/NavMenu/NavMenu';
+import DropMenu from '../../Components/MenuComponents/DropdownMenu/DropdownMenu';
+import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
+
+// Sections Component
+import Hero from '../../Components/Sections/Hero/Hero';
+import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
+import TextSection from '../../Components/Sections/TextSection/TextSection';
+
+//  Animations
 import { animationOne, transition } from '../../animations/animations';
+
+// Dummy data
 import Image from '../../Data/Images/photo1.jpg';
-import DropMenu from '../../Components/DropdownMenu/DropdownMenu';
-import ImagetextContent from '../../Components/ImageTextContent/ImagetextContent';
-import { InfoData, InfoData2, textData } from '../../Data/InfoData/InfoData';
-import TextContent from '../../Components/TextContent/TextContent';
-import FooterMenu from '../../Components/FooterMenu/footer.component';
+import { HomeObjOne, HomeObjTwo, textData } from '../../Data/InfoData/InfoData';
 
 const Landingpage = () => {
 
@@ -17,16 +25,16 @@ const Landingpage = () => {
     const toggle = () => {
         setIsOpen(!isOpen);
     }
+    
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div>
                 <Navmenu toggle={toggle} />
                 <DropMenu isOpen={isOpen} toggle={toggle} />
                 <Hero image={Image} />
-                <ImagetextContent {...InfoData} />
-                <TextContent {...textData} />
-                <ImagetextContent {...InfoData2} />
-                <TextContent text="Need to develop a pre-loading (splash) Screen" />
+                <InfoSection {...HomeObjOne}/>
+                <InfoSection {...HomeObjTwo}/>
+                <TextSection {...textData} />
                 <FooterMenu />
             </div>
         </motion.div>

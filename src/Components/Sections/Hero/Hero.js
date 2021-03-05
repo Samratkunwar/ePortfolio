@@ -21,23 +21,23 @@ const Container = styled.div`
 
     h1{
         font-size: clamp(2rem, 8vw, 5rem);
-        margin-buttom: 0.5rem;
+        margin-bottom: 0.5rem;
     }
 
     p{
         font-size: clamp(1rem, 6vw, 2.5rem);
-        margin-buttom: 1rem;
+        margin-bottom: 1rem;
     }
 
     button{
         font-size: clamp(0.8rem, 4vw, 1.2rem);
-        margin-buttom: 0.8rem 2rem;
+        margin-bottom: 0.8rem 2rem;
         color: #000;
         background: #ffb347;
         background: linear-gradient(to right, #ffcc33, #ffb347);
         border: none;
         border-radius: 4px;
-        cursor: pointer:
+        cursor: pointer;
         outline: none;
     }
 `;
