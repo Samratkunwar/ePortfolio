@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import '../Home/home.page.css';
 import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
+import NavMenu from '../../Components/MenuComponents/NavMenu/NavMenu';
+import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
 
 class HomePage extends Component {
     render () {
@@ -117,17 +119,21 @@ class HomePage extends Component {
                             </div>
                         </div>
                     </div>
+                    
 
                     <div className="u-center-text u-margin-top-huge">
                         <a href="/project" className="btn-text">View All Projects &rarr;</a>
                     </div>
                 </section>
 
+                <BackgroundVideo />
+
             </main>
         )
         
         return (
            <div>
+               <NavMenu />
                 {header}
                 {main}
 

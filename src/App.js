@@ -20,8 +20,8 @@ function App() {
   return (
     <div className="App">
       {/* <NavMenu /> */}
-      {/* <Route path='/' component={HomePage} exact /> */}
       <Route path='/' component={Landingpage} exact />
+      <Route path='/home' component={HomePage} exact />
       <Route path='/profile' component={ProfilePage} exact />
       <Route path='/aboutme' component={AboutMe} exact />
       <Route path='/projects' component={ProjectPage} exact />
