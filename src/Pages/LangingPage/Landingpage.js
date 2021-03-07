@@ -11,14 +11,14 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
-import SlideShow from '../../Components/Sections/SlideShow/SlideShow';
+import HeroSlider from '../../Components/Sections/Hero/HeroSlider';
+import Card from '../../Components/Sections/Card/Card';
 
 //  Animations
 import { animationOne, transition } from '../../animations/animations';
 
 // Dummy data
-import Image from '../../Data/Images/photo1.jpg';
-import { DemoData, HomeObjOne, HomeObjTwo, textData } from '../../Data/InfoData/InfoData';
+import { DemoData, HomeObjOne, HomeObjTwo, textData, Herodata, SliderData } from '../../Data/InfoData/InfoData';
 
 const Landingpage = () => {
 
@@ -33,12 +33,13 @@ const Landingpage = () => {
             <div>
                 <Navmenu toggle={toggle} />
                 <DropMenu isOpen={isOpen} toggle={toggle} />
-                <Hero image={Image} />
+                 <Hero {...Herodata} />
                 <InfoSection {...HomeObjOne}/>
                 <BackgroundVideo {...DemoData}/>
-                <SlideShow />
+                <HeroSlider slides={SliderData}/>
                 <InfoSection {...HomeObjTwo}/>
                 <TextSection {...textData} />
+                <Card />
                 <FooterMenu />
             </div>
         </motion.div>

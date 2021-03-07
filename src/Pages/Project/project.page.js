@@ -14,7 +14,7 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import { animationTwo, transition } from '../../animations/animations';
 
 // Dummy Data
-import Image from '../../Data/Images/photo3.jpg';
+import {Herodata3} from '../../Data/InfoData/InfoData';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -34,7 +34,7 @@ const ProjectPage = () => {
                 <div>
                 <   Navmenu toggle={toggle} />
                     <DropMenu isOpen={isOpen} toggle={toggle} />
-                    <Hero image={Image} />
+                    <Hero {...Herodata3} />
                     <FooterMenu />
                 </div>
             </motion.div>

@@ -42,13 +42,13 @@ const Container = styled.div`
     }
 `;
 
-const Hero = ({image}) => {
+const Hero = ({image, title, description, button}) => {
     return (
         <Section image={image}>
             <Container>
-                <h1>title</h1>
-                <p>Descritpion</p>
-                <button>Learn More</button>
+                <h1>{title}</h1>
+                <p>{description}</p>
+                <button href={button.link}>{button.label}</button>
             </Container>
         </Section>
     )
