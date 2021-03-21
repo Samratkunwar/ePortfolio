@@ -11,7 +11,7 @@ import HomePage from './Pages/Home/home.page';
 import ProfilePage from './Pages/Profile/profile.page';
 
 // import Component
-// import NavMenu from './Components/NavMenu/Navmenu.component';
+import NavMenu from './Components/MenuComponents/NavMenu/NavMenu';
 import ProjectPage from './Pages/Project/project.page';
 import Landingpage from './Pages/LangingPage/Landingpage';
 import AboutMe from './Pages/AboutMe/AboutMe';
@@ -19,7 +19,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 function App() {
   return (
     <div className="App">
-      {/* <NavMenu /> */}
+      <NavMenu />
       <Route path='/' component={Landingpage} exact />
       <Route path='/home' component={HomePage} exact />
       <Route path='/profile' component={ProfilePage} exact />
