@@ -62,9 +62,9 @@ class HomePage extends Component {
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
-                                <img src={image} alt="Photo 1" className="composition__photo composition__photo--p1"/>
-                                <img src={image} alt="Photo 2" className="composition__photo composition__photo--p2"/>
-                                <img src={image} alt="Photo 3" className="composition__photo composition__photo--p3"/>
+                                <img src={image} alt="p1" className="composition__photo composition__photo--p1"/>
+                                <img src={image} alt="p2" className="composition__photo composition__photo--p2"/>
+                                <img src={image} alt="p3" className="composition__photo composition__photo--p3"/>
                             </div>
                         </div>
                     </div> 
