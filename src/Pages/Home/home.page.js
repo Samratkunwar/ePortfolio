@@ -58,7 +58,7 @@ class HomePage extends Component {
                             <p className="paragraph">
                                 Gibberish, also called jibber-jabber or gobbledygook, is speech that is (or appears to be) nonsense. It may include speech sounds that are not actual words, or language games and specialized jargon that seems nonsensical to outsiders.
                             </p>
-                            <a href="#" className="btn-text">Learn more &rarr;</a>
+                            <a href="/aboutme" className="btn-text">Learn more &rarr;</a>
                         </div>
                         <div className="col-1-of-2">
                             <div className="composition">
