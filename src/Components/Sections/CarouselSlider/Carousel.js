@@ -3,8 +3,9 @@ import styled, {css} from 'styled-components/macro';
 import {Button} from '../../../Css/globalStyle';
 import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
+import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
 
-
+// Properties for Hero Slider
 const HeroSliderSection = styled.section`
     height: 100vh;
     max-height: 1100px;
@@ -122,10 +123,68 @@ const BackwardArrow = styled(IoArrowBack)`
     ${ArrowButton}
 `;
 
-const HeroSlider = ({slides}) => {
+
+// properties for carousel slider
+const CarouselSliderSection = styled.div`
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+`;
+
+const Image = styled.img`
+    width: 1000px;
+    height: 600px;
+    border-radius: 10px;
+`;
+
+const NextArrow = styled(FaArrowAltCircleLeft)`
+    position: absolute;
+    top: 50%;
+    left: 15rem;
+    font-size: 3rem;
+    color: #000d1a;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        color: #cd853f;
+        transform: scale(1.05)        
+    };
+
+    @media screen and (max-width: 1200px) {
+        left: 15px;
+    }
+
+`;
+
+const PreviousArrow = styled(FaArrowAltCircleRight)`
+    position: absolute;
+    top: 50%;
+    right: 15rem;
+    font-size: 3rem;
+    color: #000d1a;
+    z-index: 10;
+    cursor: pointer;
+    user-select: none;
+
+    &:hover {
+        color: #cd853f;
+        transform: scale(1.05)        
+    };
+
+    @media screen and (max-width: 1300px) {
+        right: 15px;
+    }
+`;
+
+const Carousel = (props) => {
 
     const [current, setCurrent] = useState(0)
-    const length = slides.length
+    const length = props.slides.length
     const timeout = useRef(null)
     useEffect(() => {
         const nextSlide = () => {
@@ -143,37 +202,48 @@ const HeroSlider = ({slides}) => {
     )
 
     const nextSlide = () => {
+        if(timeout.current) {
+            clearTimeout(timeout.current)
+        }
         setCurrent(current === length - 1 ? 0 : current + 1 )
     }
 
     const previousSlide = () => {
+        if(timeout.current) {
+            clearTimeout(timeout.current)
+        }
         setCurrent(current === 0 ? length - 1 : current - 1 )
     }
 
-    return (
+    if (!Array.isArray(props.slides) || props.slides.length <= 0) {
+        return null;
+    }
+
+    let Carousel = null;
+
+    const HeroSlider = (
         <HeroSliderSection>
             <HeroSliderWrapper>
-                {slides.map((slide, index) => (
-                        <HeroSlide key={index}>
-                            {index === current && (
-                                <HeroSliders>
-                                    <HeroSliderImage src={slide.image} alt={slide.alt}/>
-                                    <HeroSliderContent>
-                                        <h1>{slide.title}</h1>
-                                        <p>{slide.price}</p>
-                                        <Button to={slide.path} primary="true"
-                                            css={`
-                                                max-width: 160px;
-                                            `}
-                                        >
-                                            {slide.label}
-                                            <Arrow />
-                                        </Button>
-                                    </HeroSliderContent>
-                                </HeroSliders>
-                            )}
-                        </HeroSlide>
-                
+                {props.slides.map((slide, index) => (
+                    <HeroSlide key={index}>
+                        {index === current && (
+                            <HeroSliders>
+                                <HeroSliderImage src={slide.image} alt={slide.alt}/>
+                                <HeroSliderContent>
+                                    <h1>{slide.title}</h1>
+                                    <p>{slide.price}</p>
+                                    <Button to={slide.path} primary="true"
+                                        css={`
+                                            max-width: 160px;
+                                        `}
+                                    >
+                                        {slide.label}
+                                        <Arrow />
+                                    </Button>
+                                </HeroSliderContent>
+                            </HeroSliders>
+                        )}
+                    </HeroSlide>
                 ))}
                 <SliderButtons>
                     <BackwardArrow onClick={previousSlide}/>
@@ -182,6 +252,40 @@ const HeroSlider = ({slides}) => {
             </HeroSliderWrapper>
         </HeroSliderSection>
     )
+
+    const CarouselSlider = (
+        <CarouselSliderSection>
+            <NextArrow onClick={nextSlide}/>
+            <PreviousArrow onClick={previousSlide}/>
+            {props.slides.map((slide, index) => {
+                return (
+                    <div className={index === current ? 'slider active' : 'slider'} 
+                    key={index}>
+                        {index === current && (
+                            <Image src={slide.image} alt={slide.alt}/>
+                        )}
+                    </div>
+                ) 
+            })}
+        </CarouselSliderSection>
+    )
+
+    switch (props.sliderType) {
+        case ("HeroSlider"):
+            Carousel = HeroSlider;
+            break;
+        case ("CarouselSlider"):
+            Carousel = CarouselSlider;
+            break;
+        default:
+            Carousel = HeroSlider;
+    }
+
+    return (
+        <div>
+            {Carousel}
+        </div>
+    )
 }
 
-export default HeroSlider;
+export default Carousel;

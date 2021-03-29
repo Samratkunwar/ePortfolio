@@ -3,7 +3,7 @@ import React from 'react'
 const Card = () => {
     return (
         <div>
-            <h1> This is a card component</h1>
+            <h1> This Section will contain cards</h1>
         </div>
     )
 }

@@ -40,7 +40,7 @@ const Heading = styled.h1`
 
     &:hover {
         transform: skewY(2deg) skewX(15deg) scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); 
+        text-shadow: 0.5rem 1rem 2rem rgba(0, 0, 0, 0.2); 
     }
 `;
 
@@ -65,6 +65,11 @@ const ContentWrapper = styled.div`
     padding-left: 9rem;
     font-size: var(--default-font-size);
     transform: skewX(-12deg);
+
+    @media screen and (max-width: 500px) {
+        transform: skewX(0deg);
+        width: 85%;
+    }
 `;
 
 const ImageWrapper = styled.div`
@@ -78,6 +83,11 @@ const ImageWrapper = styled.div`
     transform: translate(-3rem) skewX(12deg);
     position: relative;
     overflow: hidden;
+    
+    @media screen and (max-width: 500px) {
+        transform: translate(0rem) skewX(0deg);
+        margin-left: -1rem;
+    }
 `;
 
 const Image = styled.img`
@@ -115,6 +125,10 @@ const ImageCaption = styled.figcaption`
 const TextWrapper = styled.div`
     transform: skewX(12deg);
     text-align: left;
+
+    @media screen and (max-width: 500px) {
+        transform: skewX(0deg);
+    }
 `;
 
 const TextHeader = styled.h1`
@@ -122,6 +136,7 @@ const TextHeader = styled.h1`
     font-weight: 700;
     text-transform: uppercase;
     margin-bottom: 2rem; 
+
 `;
 
 const TextParagraph = styled.p``;
@@ -177,7 +192,7 @@ const BackgroundVideo = ({
                             <Image src={item.Img} alt={item.ImgDec} />
                             <ImageCaption>{item.ImgCaption}</ImageCaption>
                         </ImageWrapper>
-
+                        
                         <TextWrapper>
                             <TextHeader>
                                 {item.ImgHeading}
@@ -185,7 +200,7 @@ const BackgroundVideo = ({
                             <TextParagraph>
                                 {item.ImgParagraph}
                             </TextParagraph>
-                        </TextWrapper>
+                        </TextWrapper> 
                     </ContentWrapper> 
                 </Content>
             ))}

@@ -63,7 +63,7 @@ export const Herodata3 = {
 };
 
 export const textData = {
-    text: " This is a tect only section. Use it for testemonials and thoughts. * Note: Splash Screen Still under construction ",
+    text: " This section accepts just text! ",
 }
 
 export const HomeObjOne= {

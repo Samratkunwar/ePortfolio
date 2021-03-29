@@ -15,17 +15,19 @@ import ProfilePage from './Pages/Profile/profile.page';
 import ProjectPage from './Pages/Project/project.page';
 import Landingpage from './Pages/LangingPage/Landingpage';
 import AboutMe from './Pages/AboutMe/AboutMe';
+import Splashscreen from './Components/Sections/Splashscreen/Splashscreen';
 
 function App() {
   return (
     <div className="App">
       {/* <NavMenu /> */}
-      <Route path='/ePortfolio/' component={Landingpage} exact />
-      <Route path='/ePortfolio/home' component={HomePage} exact />
-      <Route path='/ePortfolio/profile' component={ProfilePage} exact />
-      <Route path='/ePortfolio/aboutme' component={AboutMe} exact />
-      <Route path='/ePortfolio/projects' component={ProjectPage} exact />
-      <Route path='/ePortfolio/project/:_id' component={ProjectPage} exact />
+      <Route path='/' component={Landingpage} exact />
+      {/* <Route path='/landingPage' component={Landingpage} exact /> */}
+      <Route path='/home' component={HomePage} exact />
+      <Route path='/profile' component={ProfilePage} exact />
+      <Route path='/aboutme' component={AboutMe} exact />
+      <Route path='/projects' component={ProjectPage} exact />
+      <Route path='/project/:_id' component={ProjectPage} exact />
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

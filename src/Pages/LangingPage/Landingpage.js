@@ -11,8 +11,8 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
-import HeroSlider from '../../Components/Sections/Hero/HeroSlider';
 import Card from '../../Components/Sections/Card/Card';
+import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
 
 //  Animations
 import { animationOne, transition } from '../../animations/animations';
@@ -33,10 +33,10 @@ const Landingpage = () => {
             <div>
                 <Navmenu toggle={toggle} />
                 <DropMenu isOpen={isOpen} toggle={toggle} />
-                 <Hero {...Herodata} />
+                <Hero {...Herodata} />
                 <InfoSection {...HomeObjOne}/>
                 <BackgroundVideo {...DemoData}/>
-                <HeroSlider slides={SliderData}/>
+                <Carousel slides={SliderData} sliderType="HeroSlider" />
                 <InfoSection {...HomeObjTwo}/>
                 <TextSection {...textData} />
                 <Card />
