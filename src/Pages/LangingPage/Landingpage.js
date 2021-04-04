@@ -20,7 +20,7 @@ import { animationOne, transition } from '../../animations/animations';
 // Dummy data
 import { HomeObjOne, HomeObjTwo } from '../../Data/InfoData';
 import {Herodata} from '../../Data/heroData';
-import {textData} from '../../Data/textData';
+import {textData, textData3} from '../../Data/textData';
 import {SliderData} from '../../Data/sliderData';
 import {DemoData} from '../../Data/bacVidData';
 
@@ -40,9 +40,9 @@ const Landingpage = () => {
                 <Hero {...Herodata} />
                 <InfoSection {...HomeObjOne}/>
                 <BackgroundVideo {...DemoData}/>
-                <Carousel slides={SliderData} sliderType="HeroSlider" />
+                <Carousel {...SliderData} />
                 <InfoSection {...HomeObjTwo}/>
-                <TextSection {...textData} />
+                <TextSection {...textData3} />
                 <Card />
                 <FooterMenu />
             </div> 

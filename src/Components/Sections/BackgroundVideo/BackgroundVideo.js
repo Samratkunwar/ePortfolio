@@ -1,10 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
+import { FontStyle } from '../../../Css/globalStyle';
 
 const Section = styled.div`
     padding: 15rem 0;
     position: relative;
+    ${FontStyle}
 `;
 
 const Background = styled.div`

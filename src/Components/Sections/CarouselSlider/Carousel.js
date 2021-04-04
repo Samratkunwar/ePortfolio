@@ -1,9 +1,13 @@
 import React, {useState, useRef, useEffect} from 'react'
 import styled, {css} from 'styled-components/macro';
-import {Button} from '../../../Css/globalStyle';
+import {Button, FontStyle} from '../../../Css/globalStyle';
 import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+
+const SectionMain = styled.div`
+    ${FontStyle};
+`;
 
 // Properties for Hero Slider
 const HeroSliderSection = styled.section`
@@ -125,6 +129,21 @@ const BackwardArrow = styled(IoArrowBack)`
 
 
 // properties for carousel slider
+const CarouselTitle = styled.h1`
+    text-align: center;
+    margin-bottom: 8rem;
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    background-image: linear-gradient(to right, #7ed56f, #28b485);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    letter-spacing: .2rem;
+    transform: all .2s;
+`;
+
 const CarouselSliderSection = styled.div`
     position: relative;
     height: 100vh;
@@ -185,7 +204,7 @@ const PreviousArrow = styled(FaArrowAltCircleRight)`
 const Carousel = (props) => {
 
     const [current, setCurrent] = useState(0)
-    const length = props.slides.length
+    const length = props.CarouselData.length
     const timeout = useRef(null)
     useEffect(() => {
         const nextSlide = () => {
@@ -216,7 +235,7 @@ const Carousel = (props) => {
         setCurrent(current === 0 ? length - 1 : current - 1 )
     }
 
-    if (!Array.isArray(props.slides) || props.slides.length <= 0) {
+    if (!Array.isArray(props.CarouselData) || props.CarouselData.length <= 0) {
         return null;
     }
 
@@ -225,7 +244,7 @@ const Carousel = (props) => {
     const HeroSlider = (
         <HeroSliderSection>
             <HeroSliderWrapper>
-                {props.slides.map((slide, index) => (
+                {props.CarouselData.map((slide, index) => (
                     <HeroSlide key={index}>
                         {index === current && (
                             <HeroSliders>
@@ -258,7 +277,7 @@ const Carousel = (props) => {
         <CarouselSliderSection>
             <NextArrow onClick={nextSlide}/>
             <PreviousArrow onClick={previousSlide}/>
-            {props.slides.map((slide, index) => {
+            {props.CarouselData.map((slide, index) => {
                 return (
                     <div className={index === current ? 'slider active' : 'slider'} 
                     key={index}>
@@ -276,16 +295,19 @@ const Carousel = (props) => {
             Carousel = HeroSlider;
             break;
         case ("CarouselSlider"):
-            Carousel = CarouselSlider;
+            Carousel = <div>
+                            <CarouselTitle>{props.CarouselTitle}</CarouselTitle>
+                            {CarouselSlider};
+                        </div>
             break;
         default:
             Carousel = HeroSlider;
     }
 
     return (
-        <div>
+        <SectionMain>
             {Carousel}
-        </div>
+        </SectionMain>
     )
 }
 

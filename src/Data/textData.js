@@ -1,10 +1,17 @@
 export const textData = {
-    title: "This is a title",
-    text: " This section accepts just text! ",
+    title: "About Me.",
+    subtitle: "Talking about my Background ",
+    text: " I am a creative frontend developer and UX/UI designer from Nepal, based in Brisbane, Australia. I graduate from Griffith University with a Bachelor of Information technology majoring in Software development. ",
 }
 
 export const textData2 = {
     title: "About me",
     subtitle: "my Background",
     text: " I am a creative frontend developer and UX/UI designer from Nepal, based in Brisbane, Australia"
+}
+
+export const textData3 = {
+    title: "To-do list",
+    subtitle: "Things to be added on the app!",
+    text: " 1. Contact Me Form 1.1. Contact Me function and email link 2. Glass Cards for project display 3. slider transition fixing"
 }

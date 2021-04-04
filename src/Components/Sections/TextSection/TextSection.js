@@ -12,22 +12,45 @@ const Section = styled.section`
     
 const Container = styled.div`
     padding: 0rem 4rem;
-    font-size: 25px; 
     ${FontStyle};
-
-    p {
-        color: #fff; 
-    }
 `;
 
+const SectionTitle = styled.h1`
+    color: var(--color-white);
+    font-size: 3.5rem;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 500px) {
+        font-size: 2rem;
+    }
+
+`;
+const SectionSubtitle = styled.h2`
+    color: var(--color-light-white);
+    font-size: 2rem;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1rem;
+    }
+`;
+const SectionParagraph = styled.p`
+    color: var(--color-white);
+    font-size: 2.2rem;
+
+    @media screen and (max-width: 500px) {
+        font-size: 1.2rem;
+    }
+`;
 
 const TextSection = (props) => {
     return (
         <Section>
             <Container>
-                <h1>{props.title}</h1>
-                <h2>{props.subtitle}</h2>
-                <p>{props.text}</p>
+                <SectionTitle>{props.title}</SectionTitle>
+                <SectionSubtitle>{props.subtitle}</SectionSubtitle>
+                <SectionParagraph>{props.text}</SectionParagraph>
             </Container>
         </Section>
     )
