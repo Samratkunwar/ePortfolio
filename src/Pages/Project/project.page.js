@@ -14,7 +14,7 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import { animationTwo, transition } from '../../animations/animations';
 
 // Dummy Data
-import {Herodata3} from '../../Data/InfoData/InfoData';
+import {Herodata3} from '../../Data/heroData';
 
 const Section = styled.section`
     overflow-x: hidden;

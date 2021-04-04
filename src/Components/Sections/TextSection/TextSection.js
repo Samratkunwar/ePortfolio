@@ -21,11 +21,13 @@ const Container = styled.div`
 `;
 
 
-const TextSection = ({text}) => {
+const TextSection = (props) => {
     return (
         <Section>
             <Container>
-                <p>{text}</p>
+                <h1>{props.title}</h1>
+                <h2>{props.subtitle}</h2>
+                <p>{props.text}</p>
             </Container>
         </Section>
     )

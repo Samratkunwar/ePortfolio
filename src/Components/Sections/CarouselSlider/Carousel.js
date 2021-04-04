@@ -138,6 +138,7 @@ const Image = styled.img`
     width: 1000px;
     height: 600px;
     border-radius: 10px;
+    box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.4);
 `;
 
 const NextArrow = styled(FaArrowAltCircleLeft)`

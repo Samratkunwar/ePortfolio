@@ -9,12 +9,14 @@ import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
 
 // Sections
 import Hero from '../../Components/Sections/Hero/Hero';
+import TextSection from '../../Components/Sections/TextSection/TextSection';
 
 // Animations
 import { animationTwo, transition } from '../../animations/animations';
 
 // Dummy Data
-import {Herodata2} from '../../Data/InfoData/InfoData';
+import {Herodata2} from '../../Data/heroData';
+import {textData2} from '../../Data/textData';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -35,6 +37,7 @@ const AboutMe = () => {
                     <Navmenu toggle={toggle} />
                     <DropMenu isOpen={isOpen} toggle={toggle} />
                     <Hero {...Herodata2} />
+                    <TextSection {...textData2} />
                     <FooterMenu />
                 </div>
             </motion.div>

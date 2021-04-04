@@ -69,6 +69,7 @@ const ContentWrapper = styled.div`
     @media screen and (max-width: 500px) {
         transform: skewX(0deg);
         width: 85%;
+        padding: 3rem;
     }
 `;
 

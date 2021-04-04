@@ -1,11 +1,26 @@
-import React from 'react'
+import React from 'react';
 
-const Button = ({link, label}) => {
+import './button.css';
+
+const Button = (props) => {
+
+    let buttonElement = null;
+
+    switch (props.type) {
+        case ('success'):
+            buttonElement = <button className="button__success" onClick={props.clickAction}>{props.label}</button>
+            break;
+        case ('danger'):
+            buttonElement = <button className="button__danger" onClick={props.clickAction}>{props.label}</button>
+            break;
+        default:
+            buttonElement = <button className="button__success" onClick={props.clickAction}>{props.label}</button>
+    }
     return (
         <div>
-            <button to={link}>{label}</button>
+            {buttonElement}
         </div>
     )
 }
 
-export default Button
+export default Button; 

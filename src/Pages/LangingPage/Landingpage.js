@@ -18,7 +18,11 @@ import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
 import { animationOne, transition } from '../../animations/animations';
 
 // Dummy data
-import { DemoData, HomeObjOne, HomeObjTwo, textData, Herodata, SliderData } from '../../Data/InfoData/InfoData';
+import { HomeObjOne, HomeObjTwo } from '../../Data/InfoData';
+import {Herodata} from '../../Data/heroData';
+import {textData} from '../../Data/textData';
+import {SliderData} from '../../Data/sliderData';
+import {DemoData} from '../../Data/bacVidData';
 
 const Landingpage = () => {
 
@@ -41,7 +45,7 @@ const Landingpage = () => {
                 <TextSection {...textData} />
                 <Card />
                 <FooterMenu />
-            </div>
+            </div> 
         </motion.div>
     )
 }

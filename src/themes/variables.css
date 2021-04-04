@@ -1,14 +1,21 @@
 :root {
+    --color-white: #ffffff;
+    --color-light-white: #c4c0c0ef;
+
+    --color-black: #000;
+
     --color-green-primary: #55c57a;
     --color-green-primary-light: #55c57a;
     --color-green-primary-dark: #55c57a;
-
-
-    --color-white: #ffffff;
     --color-dark-green: #0A827A;
+
+
     
     --color-grey-dark:  #131313;
     --color-grey-light: #777;
+    
+
+    --color-yellow: #ffb347;
 
     --default-font-size: 1.6rem;
     --grid-width: 114rem;
