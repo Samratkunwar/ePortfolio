@@ -43,7 +43,7 @@ export const Herodata3 = {
     title: "Winter Garden",
     description: "This is city center in Brisbane. It is just opposit to the H&M building. THe building consists of gaming parler and food court.",
     button: {
-        link: '/aboutme',
+        link: '#FormSection',
         label: 'Learn More'
     },
     elementType: "CentreText"

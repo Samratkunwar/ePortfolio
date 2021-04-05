@@ -3,15 +3,16 @@
     border: none;
     background-color: #7ed56f;
     border-radius: 10px;
-    padding: 0.5rem 2rem;
-    margin-left: -.5rem;
-    width: 100%;
-    font-size: 30px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: .9rem .9rem;
+    margin-left: -.9rem;
+    width: 75%;
+    font-size: 20px;
+    margin-left: -5rem;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
     color: #fff;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
-    
+    transition: all .3s;
 }
 
 .button__danger {
@@ -34,4 +35,14 @@
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
     color: rgba(3, 12, 3, 0.404);
-  }
+}
+
+@media screen and (max-width: 950px) {
+    .button__success, .button__danger {
+        margin-left: -1rem;
+        padding: .1rem .1rem;
+        font-size: 15px;
+        margin-top: .3rem;
+        
+    }
+}

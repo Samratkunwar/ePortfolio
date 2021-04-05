@@ -4,6 +4,7 @@ import {Button, FontStyle} from '../../../Css/globalStyle';
 import {IoMdArrowRoundForward} from 'react-icons/io';
 import {IoArrowForward, IoArrowBack} from 'react-icons/io5';
 import { FaArrowAltCircleRight, FaArrowAltCircleLeft } from 'react-icons/fa';
+import './slider.css';
 
 const SectionMain = styled.div`
     ${FontStyle};

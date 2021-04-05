@@ -16,6 +16,7 @@ import AboutMe from './Pages/AboutMe/AboutMe';
 // import NavMenu from './Components/MenuComponents/NavMenu/NavMenu';
 import Splashscreen from './Components/Sections/Splashscreen/Splashscreen';
 import Login from './Components/FormComponents/LoginComponent/Login';
+import ContactMe from './Components/FormComponents/ContactmeComponent/contactMe';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path='/projects' component={ProjectPage} exact />
       <Route path='/project/:_id' component={ProjectPage} exact />
 
+      <ContactMe />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

@@ -1,0 +1,29 @@
+
+.FormSection {
+    background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.671) 0%, rgba(255, 255, 255, 0.671) 50%, rgba(66, 248, 60, 0) 50%), url(../../../Data//Images/contactImage.jpg); 
+    
+}
+
+.Section:target {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.section_close:link, .section_close:visited  {
+    color: var(--color-green-primary-light);
+    position: absolute;
+    top: .3rem;
+    right: .1rem;
+    margin-top: -4.4rem;
+    margin-right: -2.4rem;
+    font-size: 5rem;
+    text-decoration: none;
+    display: inline-block;
+    transition:  all .2s;
+}
+
+.section_close:hover {
+    color: var(--color-dark-green);
+}
+

@@ -8,7 +8,7 @@ import ImageFour from './Images/photo4.jpg';
 
 export const SliderData = {
     CarouselTitle: "This is a title",
-    sliderType: "CarouselSlider",
+    sliderType: "HeroSlider",
     CarouselData: [
         {
             title: "Welcome to my web Page",

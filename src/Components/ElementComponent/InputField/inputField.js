@@ -32,7 +32,7 @@ const Input = (props) => {
             // break;
 
         case ('radio'):
-            inputElement = <h1>here</h1>
+            inputElement = <input {...props.elementConfig} />
             break;
 
         case ('Fileinput'):           
@@ -73,8 +73,8 @@ const Input = (props) => {
 
     return (
         <div>
-            {inputLabel}            
             {inputElement}
+            {inputLabel}            
         </div>
     )
 }
