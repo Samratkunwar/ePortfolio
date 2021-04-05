@@ -6,6 +6,7 @@ import Input from '../../ElementComponent/InputField/inputField';
 import './contactMe.css';
 
 import {AiFillMessage} from 'react-icons/ai'
+import {sendEmail} from '../../../Services/services';
 
 const Section = styled.div`
     height: 100vh;
@@ -107,9 +108,10 @@ class ContactMe extends Component {
 
     state = {
         contactform: {
-            name: {
+            from_name: {
                 elementType: 'input',
                 elementConfig: {
+                    name: "from_name",
                     label: 'Full Name',
                     type: 'text',
                     placeholder: 'Johnny Deep',
@@ -117,9 +119,10 @@ class ContactMe extends Component {
                 },
                 value: ''
             },
-            email: {
+            from_email: {
                 elementType: 'input',
                 elementConfig: {
+                    name: "from_email",
                     label: 'Email',
                     type: 'email',
                     placeholder: 'johnny@eportfolio.com',
@@ -130,6 +133,7 @@ class ContactMe extends Component {
             message: {
                 elementType: 'input',
                 elementConfig: {
+                    name: "message",
                     label: 'Message',
                     type: 'text',
                     placeholder: 'Message',
@@ -154,16 +158,7 @@ class ContactMe extends Component {
 
     submitform = (event) => {
         event.preventDefault();
-        const formData = {};
-        for (let formElementIdentifier in this.state.contactform) {
-            formData[formElementIdentifier] = this.state.contactform[formElementIdentifier].value
-        } 
-
-        let Name = formData['name'],
-            Email = formData['email'],
-            Message = formData['message']
-        ; 
-        console.log(Name, Email, Message);
+        sendEmail(event);
     }
 
     render () {
@@ -184,6 +179,7 @@ class ContactMe extends Component {
                     {formElementArray.map(formElement => (
                         <Input 
                         key={formElement.id}
+                        name = {formElement.config.elementConfig.name}
                         label={formElement.config.elementConfig.label}
                         elementType={formElement.config.elementType}
                         elementConfig={formElement.config.elementConfig}
