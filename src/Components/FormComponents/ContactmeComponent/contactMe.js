@@ -24,35 +24,41 @@ const Section = styled.div`
 `;
 
 const ContactMeButton = styled.a`
-    height: 6rem; 
-    width: 6rem;
-    border-radius: 50%;
-    border: none;
     position: fixed;
+    height: 7rem; 
+    width: 7rem;
+    border-radius: 50%;
     bottom: 1.5rem;
     right: 1.5rem;
-    background-image: radial-gradient(var(--color-green-primary), var(--color-green-primary-light));
-    text-decoration: none;
     z-index: 1000;
-    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4);
-
-    &:hover {
-        transform: translateY(-3px);
-        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
-        color: rgba(3, 12, 3, 0.404);
-    }
-
+    background: rgba(255, 255, 255, .1);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    border-top: .5px solid rgba(225, 225, 225, .2);
+    border-left: 1px solid rgba(225, 225, 225, .2);
 
 `;
 
 const ContactButtonIcon = styled(AiFillMessage)`
     
-    margin-top: .9rem;
+    margin-top: 1.4rem;
     font-size: 4rem;
     color: var(--color-white);
     cursor: pointer;
     user-select: none;
+    transform: translateY(20px);
+    opacity: 0;
+    transition: .5s;
        
+    ${ContactMeButton}:hover & {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+
+    @media screen and (max-width: 360px) {
+        transform: translateY(0px);
+        opacity: 1;
+    }
 `;
 
 const FormSection = styled.div`
