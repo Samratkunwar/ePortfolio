@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { navLinks } from '../../../Data/NavLinks/navLinks';
 import Hammenu from '../../../Data/Images/list.svg'
+import { FontStyle } from '../../../Css/globalStyle';
 
 const Navbar = styled.nav`
     height: 60px;
@@ -37,6 +38,7 @@ const Logo = styled(Link)`
     font-weight: bold;
     font-style: italic;
     
+    
     &:hover {
         color: #55d980; 
         text-decoration: none;
@@ -56,6 +58,7 @@ const NavbarLink = styled(Link)`
     padding: 1rem;
     font-style: italic;
     font-size: 1.6rem;
+    ${FontStyle}
     
     &:hover {
         color: #55d980; 
@@ -66,7 +69,7 @@ const NavbarLink = styled(Link)`
 const Navmenu = ({toggle}) => {
     return (
         <Navbar>
-            <Logo to="/">Portfolio</Logo>
+            <Logo to="/">Samrat Kunwar</Logo>
             <MenuBars onClick={toggle} />
             <NavItems>
                 {navLinks.map((item, index) => (

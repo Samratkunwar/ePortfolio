@@ -13,7 +13,6 @@ import Landingpage from './Pages/LangingPage/Landingpage';
 import AboutMe from './Pages/AboutMe/AboutMe';
 
 // import Component
-// import NavMenu from './Components/MenuComponents/NavMenu/NavMenu';
 import Splashscreen from './Components/Sections/Splashscreen/Splashscreen';
 import Login from './Components/FormComponents/LoginComponent/Login';
 import ContactMe from './Components/FormComponents/ContactmeComponent/contactMe';

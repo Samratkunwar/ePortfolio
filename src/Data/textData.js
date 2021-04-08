@@ -13,5 +13,5 @@ export const textData2 = {
 export const textData3 = {
     title: "To-do list",
     subtitle: "Things to be added on the app!",
-    text: " 1. Contact Me Form 1.1. Contact Me function and email link 2. Glass Cards for project display 3. slider transition fixing"
+    text: " 1. Glass Cards for project display 2. slider transition fixing"
 }

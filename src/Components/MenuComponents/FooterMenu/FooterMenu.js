@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-import {FaFacebook, FaGithub, FaLinkedinIn} from 'react-icons/fa';
+import {FaGithub, FaLinkedinIn} from 'react-icons/fa';
 import { MdEmail } from 'react-icons/md';
 
 // const text = "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum"
@@ -175,8 +175,7 @@ const FooterMenu = () => {
                             Samrat © {new Date().getFullYear()} All rights Reserved.
                         </WebsiteRights>
                         <SocialIcons>
-                            {/* <SocialIconLink href="/" target="_blank" arial-label="Facebook"><FaFacebook /></SocialIconLink> */}
-                            <SocialIconLink href="linkedin.com/in/samrat-kunwar-4491b814a" target="_blank" arial-label="LlinkedIn"><FaLinkedinIn /></SocialIconLink>
+                            <SocialIconLink href="https://linkedin.com/in/samrat-kunwar-4491b814a" target="_blank" arial-label="LlinkedIn"><FaLinkedinIn /></SocialIconLink>
                             <SocialIconLink href="https://github.com/Samratkunwar" target="_blank" arial-label="GitHub"><FaGithub /></SocialIconLink>
                             <SocialIconLink href="https://www.google.com/intl/en-GB/gmail/about/#" target="_blank" arial-label="Email"><MdEmail /></SocialIconLink>
                         </SocialIcons>

@@ -1,30 +1,33 @@
+import griffith from './Images/griffith.gif';
+import claim from './Images/claim.png';
+
 export const DemoData = {
     BacVideoMp4: "./img/background-video.mp4",
     BacVideoWebm: "./img/background-video.webm",
-    SectionHeading: "My Personal Projects" ,
-    ButtonLink: '/aboutme',
-    ButtonLabel: "View All Projects", 
+    SectionHeading: "My Professional Experiences" ,
+    ButtonLink: '/projects',
+    ButtonLabel: "View My Projects", 
     Sections: [
         {
-            Img: "https://images.unsplash.com/photo-1474176857210-7287d38d27c6?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1050&q=80", 
-            ImgDec: "A Lion" , 
-            ImgCaption:  "Image Gallery",
-            ImgHeading: "Smile is the best Medicine!", 
-            ImgParagraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
+            Img: claim, 
+            ImgDec: "claim App" , 
+            ImgCaption:  "React Project",
+            ImgHeading: "Junior Front-end Developer", 
+            ImgParagraph: "The project involved the development of a mobile app and a dashboard system through the use of React and Ionic. As a junior developer, I was able to successfully test the API and create the first functional version of the dashboard and the mobile application. Furthermore, through the use of react redux, I was able to create a proper state management system.",
         },
         {
-            Img: "https://images.unsplash.com/photo-1601054704854-1a2e79dda4d3?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80", 
-            ImgDec: "A Lion" , 
-            ImgCaption:  "Photo Gallery",
-            ImgHeading: "This is a Photo Gallery App", 
-            ImgParagraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
+            Img: griffith, 
+            ImgDec: "Griffith University" , 
+            ImgCaption:  "Python-unity system",
+            ImgHeading: "UX/UI Designer & Requirement Manager", 
+            ImgParagraph: "The project involved the creation of a python-based mobile app able to communicate between the user and a unity server. I was responisble for the creation of wireframes and material design while specifying the functionalities and requirement of the app. As a team, we were able to successfully to develop a fully-functional application.",
         },
         {
-            Img: "https://images.unsplash.com/photo-1585856141833-ca095e957dd3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", 
-            ImgDec: "A Lion" , 
-            ImgCaption:  "Lion Gallery",
-            ImgHeading: "This is a Lion Gallery App", 
-            ImgParagraph: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui. Aperiam, ipsum sapiente aspernatur libero repellat quis consequatur ducimus quam nisi exercitationem omnis earum qui.",
+            Img: griffith, 
+            ImgDec: "Griffith University" , 
+            ImgCaption:  "Chat System",
+            ImgHeading: "Web Developer", 
+            ImgParagraph: "The project involved the development of a real-time chat system using MEAN stack. As a web developer, I was able to successfully create the chat system with the help of Angualr and the use of a JS library for realtime communication, Socket.io. Similarly, I used MongoDB for the storage of all the user data and user authentication.",
         }
     ]
     
