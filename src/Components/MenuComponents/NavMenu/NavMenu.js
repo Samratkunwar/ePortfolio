@@ -69,7 +69,7 @@ const NavbarLink = styled(Link)`
 const Navmenu = ({toggle}) => {
     return (
         <Navbar>
-            <Logo to="/">Samrat Kunwar</Logo>
+            <Logo to="/">Portfolio</Logo>
             <MenuBars onClick={toggle} />
             <NavItems>
                 {navLinks.map((item, index) => (

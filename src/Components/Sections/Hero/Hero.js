@@ -86,6 +86,11 @@ const CentreTextContainer = styled.div`
         p {
             font-size: clamp(.5rem, 5vw, 1.5rem);
         }
+
+        a {
+            text-decoration: none;
+            color: var(--color-white);
+        }
     }
 `;
 
@@ -95,23 +100,26 @@ const Hero = (props) => {
     switch (props.elementType) {
         case("CentreText"):
             HeroTextContainer = <CentreTextContainer>
+                                    <h2>{props.subtitle}</h2>
                                     <h1>{props.title}</h1>
                                     <p>{props.description}</p>
-                                    <button href={props.button.link}>{props.button.label}</button>
+                                    <a href={props.button.link}><button>{props.button.label}</button></a>
                                 </CentreTextContainer>
             break; 
         case("TextBox"):
             HeroTextContainer = <Container>
+                                    <h2>{props.subtitle}</h2>
                                     <h1>{props.title}</h1>
                                     <p>{props.description}</p>
-                                    <button href={props.button.link}>{props.button.label}</button>
+                                    <a href={props.button.link}><button>{props.button.label}</button></a>
                                 </Container>
             break;
         default:
             HeroTextContainer = <CentreTextContainer>
+                                    <h2>{props.subtitle}</h2>
                                     <h1>{props.title}</h1>
                                     <p>{props.description}</p>
-                                    <button href={props.button.link}>{props.button.label}</button>
+                                    <a href={props.button.link}><button>{props.button.label}</button></a>
                                 </CentreTextContainer>
             break;
     }

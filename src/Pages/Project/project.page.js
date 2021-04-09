@@ -9,12 +9,14 @@ import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
 
 // Sections
 import Hero from '../../Components/Sections/Hero/Hero';
+import Card from '../../Components/Sections/Card/Card';
 
 // Animations
 import { animationTwo, transition } from '../../animations/animations';
 
 // Dummy Data
 import {Herodata3} from '../../Data/heroData';
+import {cardData} from '../../Data/cardData';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -35,6 +37,7 @@ const ProjectPage = () => {
                 <   Navmenu toggle={toggle} />
                     <DropMenu isOpen={isOpen} toggle={toggle} />
                     <Hero {...Herodata3} />
+                    <Card {...cardData} />
                     <FooterMenu />
                 </div>
             </motion.div>

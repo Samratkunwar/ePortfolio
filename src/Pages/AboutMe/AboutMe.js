@@ -17,6 +17,7 @@ import { animationTwo, transition } from '../../animations/animations';
 // Dummy Data
 import {Herodata2} from '../../Data/heroData';
 import {textData2} from '../../Data/textData';
+import Samrat_resume from '../../Data/resume/SamratKunwar_CV.pdf';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -38,6 +39,9 @@ const AboutMe = () => {
                     <DropMenu isOpen={isOpen} toggle={toggle} />
                     <Hero {...Herodata2} />
                     <TextSection {...textData2} />
+                    {/* <a href={Samrat_resume} download>
+                        <button>Download</button>
+                    </a> */}
                     <FooterMenu />
                 </div>
             </motion.div>

@@ -89,7 +89,7 @@ const Img = styled.img`
 
 const InfoSection = ({ 
     primary, lightBg, imgStart, LightTopLine, lightTextDesc, 
-    buttonLabel, Description, headline, lightText, topLine,
+    buttonLabel, buttonLink, Description, headline, lightText, topLine,
     img, alt , start
 }) => {
     return (
@@ -102,7 +102,7 @@ const InfoSection = ({
                                <TopLine LightTopLine={LightTopLine}>{topLine}</TopLine>
                                <Heading lightText={lightText}>{headline}</Heading>
                                <Subtitle lightTextDesc={lightTextDesc}>{Description}</Subtitle>
-                               <Link to='/aboutme'>
+                               <Link to={buttonLink}>
                                    <Button big fontBig  primary={primary}>
                                        {buttonLabel}
                                    </Button>

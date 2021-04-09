@@ -9,11 +9,12 @@ import ImageFour from './Images/photo4.jpg';
 
 export const Herodata = {
     image: ImageOne,
-    title: "This is Title",
-    description: "This is a description",
+    title: "Website developer and user interface designer",
+    subtitle: "Hi! I am Samrat",
+    description: "Over the past few months, I have worked as a web developer and a UI designer in many of my internships and self made projects.",
     button: {
-        link: '/aboutme',
-        label: 'Learn More'
+        link: '#Section',
+        label: 'Contact Me'
     },
     elementType: "CentreText"
 };

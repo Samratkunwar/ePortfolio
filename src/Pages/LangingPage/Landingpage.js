@@ -11,7 +11,6 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
-import Card from '../../Components/Sections/Card/Card';
 import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
 
 //  Animations
@@ -43,7 +42,6 @@ const Landingpage = () => {
                 <Carousel {...SliderData} />
                 <InfoSection {...HomeObjTwo}/>
                 <TextSection {...textData3} />
-                <Card />
                 <FooterMenu />
             </div> 
         </motion.div>
