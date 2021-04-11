@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { navLinks } from '../../../Data/NavLinks/navLinks';
-import Hammenu from '../../../Data/Images/list.svg'
+import Hammenu from '../../../Data/Images/illustrations/list.svg'
 import { FontStyle } from '../../../Css/globalStyle';
 
 const Navbar = styled.nav`

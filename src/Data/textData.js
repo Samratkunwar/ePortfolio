@@ -5,13 +5,18 @@ export const textData = {
 }
 
 export const textData2 = {
-    title: "About me",
-    subtitle: "my Background",
-    text: " I am a creative frontend developer and UX/UI designer from Nepal, based in Brisbane, Australia"
+    title: "Resume!",
+    subtitle: "Bottom Left",
+    text: " See you soon!"
 }
 
 export const textData3 = {
-    title: "To-do list",
-    subtitle: "Things to be added on the app!",
-    text: " 1. Glass Cards for project display 2. slider transition fixing"
+    title: "Want to Hire Me!",
+    subtitle: "Lets Connect",
+    text: "Download my resume from aboutme page | or | Click the button on the bottom right and send me a message."
+}
+
+export const projectSectionData = {
+    title: "Hover over the cards to reveal the info.",
+    subtitle: "( If on mobile device, click on the cards )",
 }

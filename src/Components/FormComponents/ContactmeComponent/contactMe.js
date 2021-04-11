@@ -5,7 +5,7 @@ import Button from '../../ElementComponent/Button/Button';
 import Input from '../../ElementComponent/InputField/inputField';
 import './contactMe.css';
 
-import {AiFillMessage} from 'react-icons/ai'
+import {AiFillMessage} from 'react-icons/ai';
 import {sendEmail} from '../../../Services/services';
 
 const Section = styled.div`
@@ -202,7 +202,7 @@ class ContactMe extends Component {
             <div>
                 <ContactMeButton href="#Section">
                     <ContactButtonIcon />
-                    </ContactMeButton>
+                </ContactMeButton>
                 <Section className="Section" id="Section">
                     {form}
                 </Section>

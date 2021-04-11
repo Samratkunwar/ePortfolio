@@ -11,7 +11,6 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
-import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
 
 //  Animations
 import { animationOne, transition } from '../../animations/animations';
@@ -19,8 +18,7 @@ import { animationOne, transition } from '../../animations/animations';
 // Dummy data
 import { HomeObjOne, HomeObjTwo } from '../../Data/InfoData';
 import {Herodata} from '../../Data/heroData';
-import {textData, textData3} from '../../Data/textData';
-import {SliderData} from '../../Data/sliderData';
+import {textData3} from '../../Data/textData';
 import {DemoData} from '../../Data/bacVidData';
 
 const Landingpage = () => {
@@ -39,7 +37,6 @@ const Landingpage = () => {
                 <Hero {...Herodata} />
                 <InfoSection {...HomeObjOne}/>
                 <BackgroundVideo {...DemoData}/>
-                <Carousel {...SliderData} />
                 <InfoSection {...HomeObjTwo}/>
                 <TextSection {...textData3} />
                 <FooterMenu />

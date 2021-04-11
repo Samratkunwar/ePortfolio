@@ -11,6 +11,7 @@ import ProfilePage from './Pages/Profile/profile.page';
 import ProjectPage from './Pages/Project/project.page';
 import Landingpage from './Pages/LangingPage/Landingpage';
 import AboutMe from './Pages/AboutMe/AboutMe';
+import SelectedProject from './Pages/Project/selectedproject';
 
 // import Component
 import Splashscreen from './Components/Sections/Splashscreen/Splashscreen';
@@ -21,12 +22,12 @@ function App() {
   return (
     <div className="App">
       {/* <NavMenu /> */}
-      <Route path='/' component={Landingpage} exact />
+      <Route path='/ePortfolio/' component={Landingpage} exact />
       <Route path='/login' component={Login} exact />
       <Route path='/profile' component={ProfilePage} exact />
       <Route path='/aboutme' component={AboutMe} exact />
       <Route path='/projects' component={ProjectPage} exact />
-      <Route path='/project/:_id' component={ProjectPage} exact />
+      <Route path='/project/:_id' component={SelectedProject} exact />
 
       <ContactMe />
       {/* <header className="App-header">

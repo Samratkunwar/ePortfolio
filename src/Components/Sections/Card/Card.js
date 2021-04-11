@@ -9,16 +9,17 @@ const Container = styled.div`
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 12000px;
+    max-width: 10000px;
     flex-wrap: wrap;
     z-index: 1;
-    height: 100vh;
     background-size: cover;
+    padding: 15rem 0rem;
     ${FontStyle}
     
     @media screen and (max-width: 950px) {
-        max-width: 12000px;
-        height: 150vh;
+        padding: 5rem 0rem;
+        max-height: 1200vh;
+
     }
 `;
 

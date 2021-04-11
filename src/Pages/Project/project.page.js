@@ -10,6 +10,9 @@ import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
 // Sections
 import Hero from '../../Components/Sections/Hero/Hero';
 import Card from '../../Components/Sections/Card/Card';
+import TextSection from '../../Components/Sections/TextSection/TextSection';
+import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
+import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
 
 // Animations
 import { animationTwo, transition } from '../../animations/animations';
@@ -17,6 +20,9 @@ import { animationTwo, transition } from '../../animations/animations';
 // Dummy Data
 import {Herodata3} from '../../Data/heroData';
 import {cardData} from '../../Data/cardData';
+import {projectSectionData} from '../../Data/textData';
+import {InfoData3} from '../../Data/InfoData';
+import {SliderData} from '../../Data/sliderData';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -37,6 +43,9 @@ const ProjectPage = () => {
                 <   Navmenu toggle={toggle} />
                     <DropMenu isOpen={isOpen} toggle={toggle} />
                     <Hero {...Herodata3} />
+                    <InfoSection {...InfoData3} />
+                    <Carousel {...SliderData} />
+                    <TextSection {...projectSectionData} />
                     <Card {...cardData} />
                     <FooterMenu />
                 </div>

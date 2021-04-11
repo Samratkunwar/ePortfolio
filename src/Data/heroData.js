@@ -1,6 +1,6 @@
 import ImageOne from './Images/photo1.jpg';
 import ImageTwo from './Images/photo2.jpg';
-import ImageThree from './Images/photo3.jpg';
+import ProjectHero from './Images/websiteImages/projectHero.png';
 import ImageFour from './Images/photo4.jpg';
 
 // Value choices for elemetType
@@ -20,32 +20,22 @@ export const Herodata = {
 };
 export const Herodata2 = {
     image: ImageTwo,
-    title: "This is Title",
-    description: "This is a description",
+    title: "Hello There!",
+    description: "Thank you for your interest.",
     button: {
-        link: '/aboutme',
+        link: '#aboutme',
         label: 'Learn More'
     },
     elementType: "TextBox"
 };
-// export const Herodata3 = {
-//     image: ImageThree,
-//     title: "This is Title",
-//     description: "This is a description",
-//     button: {
-//         link: '/aboutme',
-//         label: 'Learn More'
-//     },
-//     elementType: "CentreText"
-// };
 
 export const Herodata3 = {
-    image: ImageThree,
-    title: "Winter Garden",
-    description: "This is city center in Brisbane. It is just opposit to the H&M building. THe building consists of gaming parler and food court.",
+    image: ProjectHero,
+    title: "My Projects",
+    description: "Welcome to my projects gallery. The website images below are a pure form of practice and inspirations while in my skill development journey as a Front-end developer.",
     button: {
-        link: '#FormSection',
-        label: 'Learn More'
+        link: '#projects',
+        label: 'Projects'
     },
     elementType: "CentreText"
 };
