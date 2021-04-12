@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-
 import Input from '../../ElementComponent/InputField/inputField';
 import './login.css';
 import Button from '../../ElementComponent/Button/Button';

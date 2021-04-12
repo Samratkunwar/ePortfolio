@@ -29,7 +29,8 @@ const Input = (props) => {
             //             }}
             //         />
             //     </div>
-            // break;
+            inputElement = <p>dateTime</p>
+            break;
 
         case ('radio'):
             inputElement = <input {...props.elementConfig} />
@@ -47,6 +48,7 @@ const Input = (props) => {
         
         case ('Select'):
             // inputElement = <Select className={"select_input"} {...props.elementConfig} onChange={props.selectChanged} ></Select>
+            inputElement = <p>Select</p>
             break;
             
         default:

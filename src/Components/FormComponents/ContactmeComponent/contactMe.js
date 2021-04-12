@@ -7,6 +7,7 @@ import './contactMe.css';
 
 import {AiFillMessage} from 'react-icons/ai';
 import {sendEmail} from '../../../Services/services';
+import Samrat_resume from '../../../Data/resume/SamratKunwar_CV.pdf';
 
 const Section = styled.div`
     height: 100vh;
@@ -62,49 +63,52 @@ const ContactButtonIcon = styled(AiFillMessage)`
 `;
 
 const FormSection = styled.div`
-
-    background-size: cover;
-    width: 75%;
-    height: 50rem;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 5px;
-    box-shadow: 0 2rem 4rem rgba(var(--color-black), .2); 
-    object-fit: cover;
+    top: 20%;
+    left: 25%;
+    width: 50%;
+    height: 50rem;
+    padding: 60px 35px 35px 35px;
+    border-radius: 20px;
+    background: #ecf0f3;
     
+    box-shadow: 5px 5px 10px #cbced1, -5px -5px 10px #cbced1 ;
+
     @media screen and (max-width: 950px) {
-        height: 30rem;
+        top: 15%;
+        left: 13%;
+        width: 75%;
+    }  
+    
+    @media screen and (max-width: 550px) {
+        top: 5%;
+        left: 8%;
         width: 85%;
-    } 
+    }  
 
     
 `;
 
-const FormLabel = styled.h1`
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    font-size: 3.5rem;
-    text-transform: uppercase;
-    font-weight: 700;
-    display: inline-block;
-    background-image: linear-gradient(to right, #7ed56f, #28b485);
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
-    letter-spacing: .2rem;
-    transform: all .2s;
-    @media screen and (max-width: 950px) {
-        font-size: 1.3rem;
-    } 
+const FormTitle = styled.div`
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: .5px;
+`;
+
+const FormSubtitle = styled.div`
+    text-align: center;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+
+    letter-spacing: 3px;
 `;
 
 const Form = styled.form`
-    width: 50%;
+    width: 100%;
 
     @media screen and (max-width: 950px) {
-        width: 45%;
+        width: 100%;
     } 
 
 `;
@@ -120,7 +124,7 @@ class ContactMe extends Component {
                     name: "from_name",
                     label: 'Full Name',
                     type: 'text',
-                    placeholder: 'Johnny Deep',
+                    placeholder: 'Johnny Walker',
                     required: true
                 },
                 value: ''
@@ -137,12 +141,12 @@ class ContactMe extends Component {
                 value: ''
             },
             message: {
-                elementType: 'input',
+                elementType: 'textarea',
                 elementConfig: {
                     name: "message",
                     label: 'Message',
-                    type: 'text',
-                    placeholder: 'Message',
+                    type: 'textarea',
+                    placeholder: 'We want to hire you.',
                     required: true
                 },
                 value: ''
@@ -180,8 +184,9 @@ class ContactMe extends Component {
         let form = (
             <FormSection className="FormSection">
                 <a href="#" className="section_close">&times;</a>
+                    <FormTitle>Contact Me!</FormTitle>
+                    <FormSubtitle>Just Send a Message.</FormSubtitle>
                 <Form onSubmit={this.submitform}>
-                    <FormLabel>Contact Me!</FormLabel>
                     {formElementArray.map(formElement => (
                         <Input 
                         key={formElement.id}
@@ -195,6 +200,10 @@ class ContactMe extends Component {
                     ))}
                     <Button type="success" label="Send" />
                 </Form>
+                <div className="link">
+                    or <br />
+                    <a href={Samrat_resume} download>Download Resume</a>
+                </div>
             </FormSection>
         )
 
@@ -213,3 +222,4 @@ class ContactMe extends Component {
 }
 
 export default ContactMe
+

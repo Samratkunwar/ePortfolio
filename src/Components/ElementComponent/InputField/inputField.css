@@ -2,19 +2,20 @@
     margin-bottom: 2rem; 
 } */
 
+
 .form__input {
     font-size: 1.2rem;
     font-family: inherit;
     color: inherit;
     padding: 1rem 2rem;
     border-radius: 10px;
-    background-color: rbga(#fff, 0.5);
     border: none;
     border-bottom: 3px solid transparent;
-    width: 95%;
+    width: 90%;
     transition: all .3s;
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.4); 
     box-sizing: border-box;
+    background: rgba(225, 225, 225, 0.5);
   }
   .form__input:focus {
       outline: none;
@@ -113,10 +114,6 @@
   }
 
   @media screen and (max-width: 950px) {
-    .form__input {
-      padding: .3rem .2rem;
-    }
-
     .form__label {
       font-size: 1rem;
     }
