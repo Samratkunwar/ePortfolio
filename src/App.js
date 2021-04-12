@@ -16,20 +16,18 @@ import SelectedProject from './Pages/Project/selectedproject';
 // import Component
 import Splashscreen from './Components/Sections/Splashscreen/Splashscreen';
 import Login from './Components/FormComponents/LoginComponent/Login';
-import ContactMe from './Components/FormComponents/ContactmeComponent/contactMe';
 
 function App() {
   return (
     <div className="App">
-      {/* <NavMenu /> */}
-      <Route path='/' component={Landingpage} exact />
+      <Route path='/' component={Splashscreen} exact />
+      <Route path='/home' component={Landingpage} exact />
       <Route path='/login' component={Login} exact />
       <Route path='/profile' component={ProfilePage} exact />
       <Route path='/aboutme' component={AboutMe} exact />
       <Route path='/projects' component={ProjectPage} exact />
       <Route path='/project/:_id' component={SelectedProject} exact />
 
-      <ContactMe />
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>

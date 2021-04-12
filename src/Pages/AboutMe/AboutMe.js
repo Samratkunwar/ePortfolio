@@ -12,6 +12,7 @@ import FooterMenu from '../../Components/MenuComponents/FooterMenu/FooterMenu';
 import Hero from '../../Components/Sections/Hero/Hero';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
+import ContactMe from '../../Components/FormComponents/ContactmeComponent/contactMe';
 
 // Animations
 import { animationTwo, transition } from '../../animations/animations';
@@ -88,6 +89,7 @@ const AboutMe = () => {
                     </Resume>
                     <FooterMenu />
                 </div>
+                <ContactMe />
             </motion.div>
         </Section>
     )

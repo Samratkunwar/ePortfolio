@@ -13,6 +13,7 @@ import Card from '../../Components/Sections/Card/Card';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import Carousel from '../../Components/Sections/CarouselSlider/Carousel';
+import ContactMe from '../../Components/FormComponents/ContactmeComponent/contactMe';
 
 // Animations
 import { animationTwo, transition } from '../../animations/animations';
@@ -49,6 +50,7 @@ const ProjectPage = () => {
                     <Card {...cardData} />
                     <FooterMenu />
                 </div>
+                <ContactMe />
             </motion.div>
         </Section>
     )

@@ -11,19 +11,31 @@
 
 
 .section_close:link, .section_close:visited  {
-    color: var(--color-green-primary-light);
+    color: var(--color-white);
     position: absolute;
-    top: .3rem;
-    right: .1rem;
-    margin-top: -4.4rem;
-    margin-right: -2.4rem;
-    font-size: 5rem;
     text-decoration: none;
-    display: inline-block;
+    height: 7rem; 
+    width: 7rem;
+    border-radius: 50%;
+    border-left: 1px solid rgba(225, 225, 225, .2);
+    border-top: .5px solid rgba(225, 225, 225, .2);
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, .5);
+    backdrop-filter: blur(5px);
+    font-size: 4.5rem;
+    bottom: -11rem;
+    right: -16rem;
     transition:  all .2s;
+    display: inline-block;
+}
+
+@media screen and (max-width: 950px) {
+    .section_close:link, .section_close:visited {
+        bottom: -16rem;
+        right: -.1rem;
+    }
 }
 
 .section_close:hover {
-    color: var(--color-dark-green);
+    color: var(--color-green-primary);
 }
 

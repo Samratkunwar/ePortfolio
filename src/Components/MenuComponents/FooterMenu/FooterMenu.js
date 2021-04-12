@@ -152,7 +152,7 @@ const FooterMenu = () => {
                     <FooterLinksWrapper>
                         <FooterLinkItems>
                             <FooterLinkTitle>Navigators</FooterLinkTitle>
-                            <FooterLink to='/'>Home</FooterLink>
+                            <FooterLink to='/home'>Home</FooterLink>
                             <FooterLink to='/aboutme'>About</FooterLink>
                             <FooterLink to='/projects'>Projects</FooterLink>
                         </FooterLinkItems>

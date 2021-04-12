@@ -11,6 +11,7 @@ import Hero from '../../Components/Sections/Hero/Hero';
 import InfoSection from '../../Components/Sections/InfoSection/InfoSection';
 import TextSection from '../../Components/Sections/TextSection/TextSection';
 import BackgroundVideo from '../../Components/Sections/BackgroundVideo/BackgroundVideo';
+import ContactMe from '../../Components/FormComponents/ContactmeComponent/contactMe';
 
 //  Animations
 import { animationOne, transition } from '../../animations/animations';
@@ -41,6 +42,7 @@ const Landingpage = () => {
                 <TextSection {...textData3} />
                 <FooterMenu />
             </div> 
+            <ContactMe />
         </motion.div>
     )
 }
