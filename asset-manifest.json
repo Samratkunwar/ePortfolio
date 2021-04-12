@@ -1,22 +1,21 @@
 {
   "files": {
-    "main.css": "/ePortfolio/static/css/main.bf59ffa9.chunk.css",
-    "main.js": "/ePortfolio/static/js/main.83c752c6.chunk.js",
-    "main.js.map": "/ePortfolio/static/js/main.83c752c6.chunk.js.map",
+    "main.css": "/ePortfolio/static/css/main.3ad8ae33.chunk.css",
+    "main.js": "/ePortfolio/static/js/main.faaac414.chunk.js",
+    "main.js.map": "/ePortfolio/static/js/main.faaac414.chunk.js.map",
     "runtime-main.js": "/ePortfolio/static/js/runtime-main.155e6c0b.js",
     "runtime-main.js.map": "/ePortfolio/static/js/runtime-main.155e6c0b.js.map",
-    "static/js/2.61e2f26a.chunk.js": "/ePortfolio/static/js/2.61e2f26a.chunk.js",
-    "static/js/2.61e2f26a.chunk.js.map": "/ePortfolio/static/js/2.61e2f26a.chunk.js.map",
+    "static/js/2.08a85061.chunk.js": "/ePortfolio/static/js/2.08a85061.chunk.js",
+    "static/js/2.08a85061.chunk.js.map": "/ePortfolio/static/js/2.08a85061.chunk.js.map",
     "index.html": "/ePortfolio/index.html",
-    "precache-manifest.16cc562df7f574e4570a8428c36bb4c9.js": "/ePortfolio/precache-manifest.16cc562df7f574e4570a8428c36bb4c9.js",
+    "precache-manifest.78186cf84b996ad9611902429c1e67af.js": "/ePortfolio/precache-manifest.78186cf84b996ad9611902429c1e67af.js",
     "service-worker.js": "/ePortfolio/service-worker.js",
-    "static/css/main.bf59ffa9.chunk.css.map": "/ePortfolio/static/css/main.bf59ffa9.chunk.css.map",
-    "static/js/2.61e2f26a.chunk.js.LICENSE.txt": "/ePortfolio/static/js/2.61e2f26a.chunk.js.LICENSE.txt",
+    "static/css/main.3ad8ae33.chunk.css.map": "/ePortfolio/static/css/main.3ad8ae33.chunk.css.map",
+    "static/js/2.08a85061.chunk.js.LICENSE.txt": "/ePortfolio/static/js/2.08a85061.chunk.js.LICENSE.txt",
     "static/media/SamratKunwar_CV.pdf": "/ePortfolio/static/media/SamratKunwar_CV.3bfd64f8.pdf",
     "static/media/backend.svg": "/ePortfolio/static/media/backend.61991bea.svg",
     "static/media/claim.png": "/ePortfolio/static/media/claim.0038926b.png",
     "static/media/comboimage.svg": "/ePortfolio/static/media/comboimage.b05ae5b5.svg",
-    "static/media/contactMe.css": "/ePortfolio/static/media/contactImage.1a0586c0.jpg",
     "static/media/gallery1.png": "/ePortfolio/static/media/gallery1.a3346f82.png",
     "static/media/griffith.gif": "/ePortfolio/static/media/griffith.c8c29207.gif",
     "static/media/hotel1.jpg": "/ePortfolio/static/media/hotel1.d371f412.jpg",
@@ -33,8 +32,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.155e6c0b.js",
-    "static/js/2.61e2f26a.chunk.js",
-    "static/css/main.bf59ffa9.chunk.css",
-    "static/js/main.83c752c6.chunk.js"
+    "static/js/2.08a85061.chunk.js",
+    "static/css/main.3ad8ae33.chunk.css",
+    "static/js/main.faaac414.chunk.js"
   ]
 }
