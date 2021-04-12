@@ -1,7 +1,6 @@
 import ImageOne from './Images/photo1.jpg';
-import ImageTwo from './Images/photo2.jpg';
+import ImageTwo from './Images/photo2.png';
 import ProjectHero from './Images/websiteImages/projectHero.png';
-import ImageFour from './Images/photo4.jpg';
 
 // Value choices for elemetType
 // "CentreText" for text at centre of the hero section
@@ -24,7 +23,7 @@ export const Herodata2 = {
     description: "Thank you for your interest.",
     button: {
         link: '#aboutme',
-        label: 'Learn More'
+        label: 'Scroll Down'
     },
     elementType: "TextBox"
 };

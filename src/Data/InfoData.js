@@ -2,6 +2,8 @@
 // true - If you want image on left
 // fales - If you want image on right
 
+const Python = "https://images.unsplash.com/photo-1526379095098-d400fd0bf935?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1189&q=80";
+
 export const HomeObjOne= {
     primary: true,
     lightBg: false,
@@ -60,13 +62,13 @@ export const HomeObjThree = {
     imgStart: true,
     LightTopLine: false,
     lightTextDesc: false,
-    buttonLabel: "Projects!",
-    buttonLink: '/projects',
-    Description: "Since the introduction to react in my Claim app internship, I have been using it for almost all my projects. It is an easy to use framework with lots of functionalities and tools to make progremming easier. One many things, I like about react is the state management system using Redux.",
-    headline: "React as a main focus for development of single page application",
+    buttonLabel: "Contact Me!",
+    buttonLink: '#Section',
+    Description: "Completing my high school in Nepal, I came to Australia to pursue my bachelor's degree in Information Technology. Following my interest in programming and software development, I completed my degree with a major in software development. Throughout my Uni years, I have worked as both web developer and software developer to upskill my knowledge of both fields. Now, I am looking for a spot in the IT industry to showcase and hone my skills while networking and learning new things.  ",
+    headline: "Born in Nepal, living in Brisbane.",
     lightText: false,
-    topLine: "React Developer",
-    img: require('./Images/illustrations/react.svg'),
+    topLine: "My Background",
+    img: require('./Images/websiteImages/nepal.jpg'),
     alt: 'Image', 
     start: 'true',
 }
@@ -79,11 +81,46 @@ export const HomeObjFour= {
     lightTextDesc: true,
     buttonLabel: "Projects!",
     buttonLink: '/projects',
-    Description: "Before moving to React, I worked with angualr and jquery. Most of my university projects required the implements of these libraries. So, building up knowedge has helped me a lot during my journey to master react.  ",
-    headline: "Angular, jQuery and Vue",
+    Description: "Since the introduction to React during my Claim internship, I have been continuously practicing React with most of my new projects being developed with the JS library. Apart from that, I have worked with jQuery, Angualr and Vue in my university projects. Following the JS libraries, I have worked around different Content Management Systems including Shopify, Workflow, Wix and WordPress. Shopify has been my absolute favourite with easy to use design and a lot of functionalities making Ecommerce easy and acessible to all.",
+    headline: "React, Angular, jQuery, Vue and CMS",
     lightText: true,
-    topLine: "Web Technology",
+    topLine: "Front-end Development Skills",
     img: require('./Images/illustrations/comboimage.svg'),
     alt: 'Image', 
     start: '',
 };
+
+
+export const HomeObjFive= {
+    primary: false,
+    lightBg: true,
+    imgStart: true,
+    LightTopLine: false,
+    lightTextDesc: false,
+    buttonLabel: "Projects!",
+    buttonLink: '/projects',
+    Description: "I have worked with few backend technologies using Node and Express. Similarly, BDMS systems like MongoDB, MySQL, Firebase and AWS database have been used in most of my projects and internships.",
+    headline: "Node, Express & DBMS",
+    lightText: false,
+    topLine: "Back-end Development Skills",
+    img: require('./Images/illustrations/backend.svg'),
+    alt: 'Image', 
+    start: '',
+};
+
+export const HomeObjSix = {
+    primary: true,
+    lightBg: false,
+    imgStart: "",
+    LightTopLine: true,
+    lightTextDesc: true,
+    buttonLabel: "Projects!",
+    buttonLink: '/projects',
+    Description: "Python is comparitively new and a powerful programming language. From Minesweeper game to a Go-card stimulation, I have created created lots of small projects using Python. Moreover, I am interested in Cyber Sycurity and AI and my curiosity has allowed me to pursue my learning in these fields using python. One of ongoing learning is the creating of a virtual stimmulation of self-driving car using python.",
+    headline: "Versatile of Pyhton",
+    lightText: true,
+    topLine: "Software Development Skills",
+    img: Python,
+    alt: 'Image', 
+    start: '',
+}

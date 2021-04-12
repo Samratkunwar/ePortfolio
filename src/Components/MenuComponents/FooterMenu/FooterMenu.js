@@ -138,30 +138,36 @@ const FooterMenu = () => {
                 <FooterLinksContainer>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Me</FooterLinkTitle>
-                            <FooterLink to='/'>Home</FooterLink>
-                            <FooterLink to='/'>About</FooterLink>
-                            <FooterLink to='/'>Projects</FooterLink>
+                            <FooterLinkTitle>
+                                Developed with React and CSS. Designed inspired through a series of learning and courses undertaken. 
+                            </FooterLinkTitle>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            {/* <FooterLinkTitle>About Me</FooterLinkTitle>
                             <FooterLink to='/'>Home</FooterLink>
                             <FooterLink to='/'>About</FooterLink>
-                            <FooterLink to='/'>Projects</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink> */}
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                     <FooterLinksWrapper>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            <FooterLinkTitle>Navigators</FooterLinkTitle>
                             <FooterLink to='/'>Home</FooterLink>
-                            <FooterLink to='/'>About</FooterLink>
-                            <FooterLink to='/'>Projects</FooterLink>
+                            <FooterLink to='/aboutme'>About</FooterLink>
+                            <FooterLink to='/projects'>Projects</FooterLink>
                         </FooterLinkItems>
                         <FooterLinkItems>
-                            <FooterLinkTitle>About Me</FooterLinkTitle>
+                            {/* <FooterLinkTitle>About Me</FooterLinkTitle>
                             <FooterLink to='/'>Home</FooterLink>
                             <FooterLink to='/'>About</FooterLink>
-                            <FooterLink to='/'>Projects</FooterLink>
+                            <FooterLink to='/'>Projects</FooterLink> */}
+                        </FooterLinkItems>
+                    </FooterLinksWrapper>
+                    <FooterLinksWrapper>
+                        <FooterLinkItems>
+                            <FooterLinkTitle>
+                                Thank you for Visiting my site. Looking forward for your message.
+                            </FooterLinkTitle>
                         </FooterLinkItems>
                     </FooterLinksWrapper>
                 </FooterLinksContainer>

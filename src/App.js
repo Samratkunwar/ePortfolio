@@ -22,7 +22,7 @@ function App() {
   return (
     <div className="App">
       {/* <NavMenu /> */}
-      <Route path='/ePortfolio/' component={Landingpage} exact />
+      <Route path='/' component={Landingpage} exact />
       <Route path='/login' component={Login} exact />
       <Route path='/profile' component={ProfilePage} exact />
       <Route path='/aboutme' component={AboutMe} exact />

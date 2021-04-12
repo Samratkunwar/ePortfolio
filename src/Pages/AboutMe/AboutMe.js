@@ -19,7 +19,7 @@ import { animationTwo, transition } from '../../animations/animations';
 // Dummy Data
 import {Herodata2} from '../../Data/heroData';
 import {textData2} from '../../Data/textData';
-import {HomeObjFour, HomeObjThree} from '../../Data/InfoData';
+import {HomeObjFive, HomeObjFour, HomeObjSix, HomeObjThree} from '../../Data/InfoData';
 import Samrat_resume from '../../Data/resume/SamratKunwar_CV.pdf';
 
 const Section = styled.section`
@@ -80,6 +80,8 @@ const AboutMe = () => {
                     <Hero {...Herodata2} />
                     <InfoSection {...HomeObjThree} />
                     <InfoSection {...HomeObjFour} />
+                    <InfoSection {...HomeObjFive} />
+                    <InfoSection {...HomeObjSix} />
                     <TextSection {...textData2} />
                     <Resume href={Samrat_resume} download>
                         <ResumeButtonIcon />
