@@ -21,7 +21,6 @@ import { animationTwo, transition } from '../../animations/animations';
 import {Herodata2} from '../../Data/heroData';
 import {textData2} from '../../Data/textData';
 import {HomeObjFive, HomeObjFour, HomeObjSix, HomeObjThree} from '../../Data/InfoData';
-import Samrat_resume from '../../Data/resume/SamratKunwar_CV.pdf';
 
 const Section = styled.section`
     overflow-x: hidden;
@@ -84,7 +83,7 @@ const AboutMe = () => {
                     <InfoSection {...HomeObjFive} />
                     <InfoSection {...HomeObjSix} />
                     <TextSection {...textData2} />
-                    <Resume href={Samrat_resume} download>
+                    <Resume href="resume.pdf" type="application/pdf" download>
                         <ResumeButtonIcon />
                     </Resume>
                     <FooterMenu />

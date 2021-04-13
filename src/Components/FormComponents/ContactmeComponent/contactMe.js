@@ -7,7 +7,6 @@ import './contactMe.css';
 
 import {AiFillMessage} from 'react-icons/ai';
 import {sendEmail} from '../../../Services/services';
-import Samrat_resume from '../../../Data/resume/SamratKunwar_CV.pdf';
 
 const Section = styled.div`
     height: 100vh;
@@ -202,7 +201,7 @@ class ContactMe extends Component {
                 </Form>
                 <div className="link">
                     or <br />
-                    <a href={Samrat_resume} download>Download Resume</a>
+                    <a href='resume.pdf' type="application/pdf" download>Download Resume</a>
                 </div>
             </FormSection>
         )
