@@ -66,7 +66,7 @@ const FormSection = styled.div`
     top: 20%;
     left: 25%;
     width: 50%;
-    height: 50rem;
+    height: 52rem;
     padding: 60px 35px 35px 35px;
     border-radius: 20px;
     background: #ecf0f3;
@@ -201,7 +201,7 @@ class ContactMe extends Component {
                 </Form>
                 <div className="link">
                     or <br />
-                    <a href='resume.pdf' type="application/pdf" download>Download Resume</a>
+                    <a href='https://linkedin.com/in/samrat-kunwar-4491b814a'>LinkedIn </a>
                 </div>
             </FormSection>
         )

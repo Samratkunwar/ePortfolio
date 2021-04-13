@@ -5,15 +5,15 @@ export const textData = {
 }
 
 export const textData2 = {
-    title: "Resume!",
-    subtitle: "Bottom Left",
+    title: "Want to Get In Touch!",
+    subtitle: "Bottom Right",
     text: " See you soon!"
 }
 
 export const textData3 = {
     title: "Want to Hire Me!",
     subtitle: "Lets Connect",
-    text: "Download my resume from aboutme page | or | Click the button on the bottom right and send me a message."
+    text: "Click the LinkedIn icon at the bottom | or | Click the button on the bottom right and send me a message."
 }
 
 export const projectSectionData = {
