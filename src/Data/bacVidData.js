@@ -1,9 +1,10 @@
 import griffith from './Images/griffith.gif';
 import claim from './Images/claim.png';
+import bVid from '../Data/video/video.mp4';
 
 export const DemoData = {
-    BacVideoMp4: "./img/background-video.mp4",
-    BacVideoWebm: "./img/background-video.webm",
+    BacVideoMp4: bVid,
+    BacVideoWebm: bVid,
     SectionHeading: "My Professional Experiences" ,
     ButtonLink: '/projects',
     ButtonLabel: "View My Projects", 
