@@ -35,7 +35,7 @@ const Landingpage = () => {
     return (
         <motion.div initial="out" animate="in" exit="out" variants={animationOne} transition={transition}>
             <div>
-                {/* <AnnouncementBar {...announcement}/> */}
+                <AnnouncementBar {...announcement}/>
                 <Navmenu toggle={toggle} />
                 <DropMenu isOpen={isOpen} toggle={toggle} />
                 <Hero {...Herodata} />
