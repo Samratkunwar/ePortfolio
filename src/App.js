@@ -20,8 +20,8 @@ import Login from './Components/FormComponents/LoginComponent/Login';
 function App() {
   return (
     <div className="App">
-      <Route path='/' component={Splashscreen} exact />
-      {/* <Route path='/ePortfolio/' component={Splashscreen} exact /> */}
+      {/* <Route path='/' component={Splashscreen} exact /> */}
+      <Route path='/ePortfolio/' component={Splashscreen} exact />
       <Route path='/home' component={Landingpage} exact />
       <Route path='/login' component={Login} exact />
       <Route path='/profile' component={ProfilePage} exact />
