@@ -20,3 +20,8 @@ export const projectSectionData = {
     title: "Hover over the cards to reveal the info.",
     subtitle: "( If on mobile device, click on the cards )",
 }
+
+export const ErrorMessage = {
+    title: "Sorry, file data couldn't be loaded",
+    subtitle: "",
+}

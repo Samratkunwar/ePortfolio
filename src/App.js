@@ -27,7 +27,7 @@ function App() {
       <Route path='/profile' component={ProfilePage} exact />
       <Route path='/aboutme' component={AboutMe} exact />
       <Route path='/projects' component={ProjectPage} exact />
-      <Route path='/project/:_id' component={SelectedProject} exact />
+      <Route path='/project/:id' component={SelectedProject} exact />
 
       {/* <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />

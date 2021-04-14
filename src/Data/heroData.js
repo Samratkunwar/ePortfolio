@@ -1,4 +1,4 @@
-import ImageOne from './Images/photo1.jpg';
+import ImageOne from './Images/photo1.png';
 import ImageTwo from './Images/photo2.png';
 import ProjectHero from './Images/websiteImages/projectHero.png';
 

@@ -6,6 +6,7 @@ const   text1 = 'Developed with Node and Express, you can post pictures and leav
 export const cardData = {
     cardInfo : [
         {
+            id: 1,
             title: 'Image Gallery',
             subtitle: '01',
             text: text1,
@@ -13,25 +14,28 @@ export const cardData = {
             link: '/project/1',
         },
         {
+            id: 2,
             title: 'ePortfolio',
             subtitle: '02',
             text: text2,
             linktitle: "Learn More",
-            link: '/project/1',
+            link: '/project/2',
         },
         {
+            id: 3,
             title: 'Hotel Reserver',
             subtitle: '03',
             text: text3,
             linktitle: "Learn More",
-            link: '/project/1',
+            link: '/project/3',
         },
         {
+            id: 4,
             title: 'Photographers Studio',
             subtitle: '04',
             text: text4,
             linktitle: "Learn More",
-            link: '/project/1',
+            link: '/project/4',
         },  
               
     ]
