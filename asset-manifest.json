@@ -1,24 +1,23 @@
 {
   "files": {
-    "main.css": "/ePortfolio/static/css/main.4c260a29.chunk.css",
-    "main.js": "/ePortfolio/static/js/main.588a7f83.chunk.js",
-    "main.js.map": "/ePortfolio/static/js/main.588a7f83.chunk.js.map",
+    "main.css": "/ePortfolio/static/css/main.24899497.chunk.css",
+    "main.js": "/ePortfolio/static/js/main.06b65b4a.chunk.js",
+    "main.js.map": "/ePortfolio/static/js/main.06b65b4a.chunk.js.map",
     "runtime-main.js": "/ePortfolio/static/js/runtime-main.155e6c0b.js",
     "runtime-main.js.map": "/ePortfolio/static/js/runtime-main.155e6c0b.js.map",
-    "static/js/2.2593b401.chunk.js": "/ePortfolio/static/js/2.2593b401.chunk.js",
-    "static/js/2.2593b401.chunk.js.map": "/ePortfolio/static/js/2.2593b401.chunk.js.map",
+    "static/js/2.b0b89cc5.chunk.js": "/ePortfolio/static/js/2.b0b89cc5.chunk.js",
+    "static/js/2.b0b89cc5.chunk.js.map": "/ePortfolio/static/js/2.b0b89cc5.chunk.js.map",
     "index.html": "/ePortfolio/index.html",
-    "precache-manifest.5308a647ebe22af92470f50902787b77.js": "/ePortfolio/precache-manifest.5308a647ebe22af92470f50902787b77.js",
+    "precache-manifest.300814b357c5aadda22d72bfe0989ec7.js": "/ePortfolio/precache-manifest.300814b357c5aadda22d72bfe0989ec7.js",
     "service-worker.js": "/ePortfolio/service-worker.js",
-    "static/css/main.4c260a29.chunk.css.map": "/ePortfolio/static/css/main.4c260a29.chunk.css.map",
-    "static/js/2.2593b401.chunk.js.LICENSE.txt": "/ePortfolio/static/js/2.2593b401.chunk.js.LICENSE.txt",
+    "static/css/main.24899497.chunk.css.map": "/ePortfolio/static/css/main.24899497.chunk.css.map",
+    "static/js/2.b0b89cc5.chunk.js.LICENSE.txt": "/ePortfolio/static/js/2.b0b89cc5.chunk.js.LICENSE.txt",
     "static/media/backend.svg": "/ePortfolio/static/media/backend.61991bea.svg",
     "static/media/claim.png": "/ePortfolio/static/media/claim.0038926b.png",
     "static/media/comboimage.svg": "/ePortfolio/static/media/comboimage.b05ae5b5.svg",
     "static/media/gallery1.png": "/ePortfolio/static/media/gallery1.a3346f82.png",
     "static/media/griffith.gif": "/ePortfolio/static/media/griffith.c8c29207.gif",
     "static/media/hotel1.jpg": "/ePortfolio/static/media/hotel1.d371f412.jpg",
-    "static/media/list.svg": "/ePortfolio/static/media/list.c159867d.svg",
     "static/media/nepal.jpg": "/ePortfolio/static/media/nepal.e128c943.jpg",
     "static/media/photo1.png": "/ePortfolio/static/media/photo1.a80bb157.png",
     "static/media/photo2.png": "/ePortfolio/static/media/photo2.70c9a137.png",
@@ -32,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.155e6c0b.js",
-    "static/js/2.2593b401.chunk.js",
-    "static/css/main.4c260a29.chunk.css",
-    "static/js/main.588a7f83.chunk.js"
+    "static/js/2.b0b89cc5.chunk.js",
+    "static/css/main.24899497.chunk.css",
+    "static/js/main.06b65b4a.chunk.js"
   ]
 }
