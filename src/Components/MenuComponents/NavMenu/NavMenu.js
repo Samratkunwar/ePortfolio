@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import { navLinks } from '../../../Data/NavLinks/navLinks';
-import Hammenu from '../../../Data/Images/illustrations/list.svg'
 import { FontStyle } from '../../../Css/globalStyle';
+import {HiOutlineMenuAlt3} from 'react-icons/hi';
 
 const Navbar = styled.nav`
     height: 60px;
@@ -14,17 +14,17 @@ const Navbar = styled.nav`
     align-items: center;
 `;
 
-const MenuBars = styled.i`
+const MenuBars = styled(HiOutlineMenuAlt3)`
     display: none;
     @media screen and (max-width: 760px) {
         display: block;
-        background-image: url(${Hammenu});
         background-size: contain;
+        color: #fff;
         height: 40px;
         width: 40px;
         cursor: pointer;
         position: absolute;
-        top: 0;
+        top: 1;
         right: 0;
         transform: translate(-50%, 25%);
     }
