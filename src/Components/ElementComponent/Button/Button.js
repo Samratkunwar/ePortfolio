@@ -13,6 +13,9 @@ const Button = (props) => {
         case ('danger'):
             buttonElement = <button className="button__danger" onClick={props.clickAction}>{props.label}</button>
             break;
+            case ('normal'):
+                buttonElement = <button className="button__normal" onClick={props.clickAction}>{props.label}</button>
+                break;
         default:
             buttonElement = <button className="button__success" onClick={props.clickAction}>{props.label}</button>
     }

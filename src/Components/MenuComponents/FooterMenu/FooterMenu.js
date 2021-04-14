@@ -183,7 +183,7 @@ const FooterMenu = () => {
                         <SocialIcons>
                             <SocialIconLink href="https://linkedin.com/in/samrat-kunwar-4491b814a" target="_blank" arial-label="LlinkedIn"><FaLinkedinIn /></SocialIconLink>
                             <SocialIconLink href="https://github.com/Samratkunwar" target="_blank" arial-label="GitHub"><FaGithub /></SocialIconLink>
-                            <SocialIconLink href="https://www.google.com/intl/en-GB/gmail/about/#" target="_blank" arial-label="Email"><MdEmail /></SocialIconLink>
+                            <SocialIconLink href="#Section" target="_blank" arial-label="Email"><MdEmail /></SocialIconLink>
                         </SocialIcons>
                     </SocialMediaWrap>
                 </SocialMedia>

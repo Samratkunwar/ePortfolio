@@ -197,7 +197,7 @@ class ContactMe extends Component {
                         changed={(event) => this.onChangeHandeller(event, formElement.id)}
                         />   
                     ))}
-                    <Button type="success" label="Send Message" />
+                    <Button type="normal" label="Send Message" />
                 </Form>
                 <div className="link">
                     or <br />

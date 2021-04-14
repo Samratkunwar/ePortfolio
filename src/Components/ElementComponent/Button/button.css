@@ -14,20 +14,12 @@
     text-transform: uppercase;
 }
 
-.button__success:hover {
-    background: #2fdbb6;
-}
-.button__success:active {
-    background: #1da88a;
-}
-
-
 .button__danger {
     border: none;
     width: 100%;
     height: 60px;
     border-radius: 20px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 700;
     font-family: 'Lato', sans-serif;
     color: #fff;
@@ -38,15 +30,30 @@
     text-transform: uppercase;
 }
 
+.button__normal {
+    border: none;
+    width: 100%;
+    height: 60px;
+    border-radius: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    font-family: 'Lato', sans-serif;
+    color: #fff;
+    background: #1df8b6cc;
+    box-shadow: 3px 3px 8px #b1b1b1, -3px -3px 8px #fff;
+    transition: .5s;
+    display: inline-block;
+    text-transform: uppercase;
+}
 
-.button__success:hover, .button__danger:hover {
+.button__success:hover, .button__danger:hover, .button__normal:hover {
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); 
     color: rgba(3, 12, 3, 0.404);
 }
 
 @media screen and (max-width: 950px) {
-    .button__success, .button__danger {
+    .button__success, .button__danger, .button__normal{
         margin-left: -1rem;
         padding: .1rem .1rem;
         font-size: 15px;
